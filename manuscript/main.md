@@ -491,6 +491,12 @@ Summary of recommended therapeutic strategies for each SCLC molecular subtype, i
 **Table 3. Novel Drug Candidates from Deep Learning Analysis.**
 Summary of 13 novel drug candidates identified through deep learning, including target genes, mechanism of action, SCLC subtype indication, in silico validation scores, and ADMET properties.
 
+**Figure 7. Molecular Mechanisms of Immunotherapy Resistance in SCLC.**
+(A) Overview of IO resistance mechanisms organized by category: antigen presentation defects (HLA class I/II, B2M, TAP1/TAP2), T-cell dysfunction (exhaustion markers PD-1, LAG-3, TIM-3, TIGIT), immunosuppressive microenvironment (Tregs, MDSCs, M2 TAMs), signaling pathway alterations (TGF-β, WNT/β-catenin, IFN defects), and metabolic immune suppression (IDO1, adenosine, arginase). (B) Heatmap of IO resistance signature scores across SCLC subtypes. SCLC-A and SCLC-N show low antigen presentation and IFN signaling (blue); SCLC-P shows high TGF-β signaling; SCLC-I shows high T-cell exhaustion despite immune infiltration. (C) Therapeutic strategies to overcome subtype-specific resistance mechanisms including HDAC inhibitors and decitabine for antigen presentation defects, STING agonists for IFN restoration, TGF-β inhibitors (galunisertib, bintrafusp alfa) for SCLC-P, and next-generation checkpoint inhibitors (anti-LAG3, anti-TIGIT) for SCLC-I. (D) Subtype-guided IO combination strategies showing chemo-IO backbone (platinum-etoposide + PD-L1i) with subtype-specific additions to overcome resistance mechanisms.
+
+**Table 4. IO Resistance Mechanisms and Therapeutic Strategies by Subtype.**
+Summary of primary IO resistance mechanisms for each SCLC subtype with corresponding therapeutic strategies and candidate drugs.
+
 ---
 
-*Word count: ~3,500 (excluding references and figure legends)*
+*Word count: ~4,000 (excluding references and figure legends)*
