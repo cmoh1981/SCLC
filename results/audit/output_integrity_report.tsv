@@ -1,0 +1,15 @@
+artifact	path	exists	size_MB	shape_or_counts	status	notes
+bulk_expression	data/processed/bulk/bulk_expression_matrix.tsv	YES	26.547	15000 rows x 100 cols	OK	
+bulk_expression_alt	data/processed/bulk/expression_matrix.tsv	YES	26.547	15000 rows x 100 cols	OK	
+bulk_metadata	data/processed/bulk/sample_metadata.tsv	YES	0.004	100 rows x 4 cols	OK	
+scrna_h5ad	data/processed/scrna/scrna_processed.h5ad	YES	38.560	N/A	READ_ERROR	No module named 'scanpy'
+spatial_expression	data/processed/spatial/spatial_expression.tsv	NO	0	N/A	MISSING	File not found
+hub_genes	results/modules/hub_genes.tsv	YES	0.087	2530 rows x 4 cols	OK	
+disgenet_evidence	results/disgenet/sclc_filtered_evidence.tsv	NO	0	N/A	MISSING	File not found
+drug_ranking	results/drugs/drug_rank.tsv	YES	0.165	1276 rows x 13 cols	OK	
+subtype_scores	results/subtypes/subtype_scores.tsv	YES	0.007	100 rows x 4 cols	OK	
+immune_scores	results/immune/immune_scores.tsv	YES	0.011	100 rows x 6 cols	OK	
+fig1	results/figures/Fig1_subtype_landscape.png	YES	0.166	170 KB	OK	
+fig3	results/figures/Fig3_modules.png	YES	1.000	1024 KB	OK	
+fig5	results/figures/Fig5_drug_triangle.png	YES	0.219	225 KB	OK	
+manuscript_main	manuscript/main.md	YES	0.004	4194 chars	OK	

@@ -1,0 +1,103 @@
+# SCLC Chemo-IO Resistance Pipeline Configuration
+# Primary: Platinum-etoposide + PD-L1 chemo-immunotherapy resistance
+
+project:
+  name: "SCLC_ChemoIO_Resistance"
+  version: "1.0.0"
+  description: "Immune-state stratification explains primary resistance across SCLC subtypes"
+
+theme:
+  focus: "Primary resistance to first-line platinum-etoposide + PD-L1 chemo-immunotherapy"
+  core_result: "Immune-state stratification explains resistance across A/N/P/I subtypes"
+  drug_goal: "Nominate add-on repurposed drugs"
+
+omics_priority:
+  primary:
+    - bulk_rna
+    - scrna
+    - spatial
+  secondary:
+    - proteomics
+    - metabolomics
+    - microbiome
+
+stages:
+  stage0:
+    name: "Asset Bootstrap"
+    enabled: true
+  stage1:
+    name: "Download"
+    enabled: true
+    open_access_only: true
+  stage2:
+    name: "Preprocess Bulk RNA"
+    enabled: true
+  stage3:
+    name: "Preprocess scRNA"
+    enabled: true
+  stage4:
+    name: "Preprocess Spatial"
+    enabled: true
+  stage5:
+    name: "Subtype Scoring"
+    enabled: true
+  stage6:
+    name: "Immune-State Scoring"
+    enabled: true
+    core: true
+  stage7:
+    name: "Resistance Modules"
+    enabled: true
+  stage7b:
+    name: "DisGeNET Evidence"
+    enabled: true
+  stage8:
+    name: "DepMap Validation"
+    enabled: false  # requires local DepMap files
+  stage9:
+    name: "Drug Repositioning"
+    enabled: true
+  stage10:
+    name: "Multi-omics Validation"
+    enabled: true
+  stage11:
+    name: "Figures & Tables"
+    enabled: true
+  stage12:
+    name: "Manuscript"
+    enabled: true
+
+paths:
+  data_raw: "data/raw"
+  data_processed: "data/processed"
+  results: "results"
+  figures: "results/figures"
+  tables: "results/tables"
+  logs: "results/logs"
+  intermediate: "results/intermediate"
+  external_tools: "external/tools"
+  external_licenses: "external/licenses"
+  manuscript: "manuscript"
+  cache: "results/disgenet/cache"
+
+  # Drug database paths (local)
+  drug_databases: "C:/Users/ohbry/OneDrive/문서/drugdatabase"
+  lincs_dir: "C:/Users/ohbry/OneDrive/문서/drugdatabase/LINCS"
+  stitch_dir: "C:/Users/ohbry/OneDrive/문서/drugdatabase/stitch"
+  chembl_dir: "C:/Users/ohbry/OneDrive/문서/drugdatabase/chembl"
+  string_dir: "C:/Users/ohbry/OneDrive/문서/drugdatabase/string"
+  bindingdb_dir: "C:/Users/ohbry/OneDrive/문서/drugdatabase/BindingDB"
+
+output:
+  figure_dpi: 300
+  figure_format: "png"
+  table_format: "tsv"
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+reproducibility:
+  random_seed: 42
+  record_versions: true
+  write_manifests: true

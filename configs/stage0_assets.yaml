@@ -1,0 +1,229 @@
+# SCLC Chemo-IO Research - Stage 0 Assets Configuration
+# Generated: 2026-01-14
+
+datasets:
+  # ============================================
+  # OPEN ACCESS - Downloaded
+  # ============================================
+
+  # Bulk RNA-seq
+  - name: "GSE60052 - SCLC Transcriptomes (Chinese cohort)"
+    kind: "bulk_rna"
+    access: "open"
+    portal: "GEO"
+    accession: "GSE60052"
+    samples: 86
+    description: "79 primary SCLC tumors + 7 normal lungs"
+    reference: "SRSF1 overexpression and chemoresistance"
+    local_path: "data/geo/GSE60052"
+    status: "downloaded"
+
+  # Single-cell RNA-seq
+  - name: "GSE138267 - Stewart et al. scRNA-seq resistance"
+    kind: "scrna"
+    access: "open"
+    portal: "GEO"
+    accession: "GSE138267"
+    samples: 25
+    description: "scRNA-seq of chemo-sensitive vs resistant SCLC PDX/CTCs"
+    reference: "Stewart et al., Nature Cancer 2020"
+    sra_bioproject: "PRJNA575243"
+    local_path: "data/geo/GSE138267"
+    status: "downloaded"
+
+  - name: "GSE138474 - Stewart et al. parent series"
+    kind: "scrna"
+    access: "open"
+    portal: "GEO"
+    accession: "GSE138474"
+    samples: 43
+    description: "Full dataset including bulk RNA subseries"
+    local_path: "data/geo/GSE138474"
+    status: "downloaded"
+
+  # Spatial Transcriptomics
+  - name: "GSE267310 - Desai et al. Spatial + Proteomics"
+    kind: "spatial"
+    access: "open"
+    portal: "GEO"
+    accession: "GSE267310"
+    samples: 12
+    description: "10x Visium spatial transcriptomics from metastatic SCLC rapid autopsy"
+    reference: "Desai et al., Cell Rep Med 2024"
+    proteomics_link: "PXD052033"
+    local_path: "data/geo/GSE267310"
+    status: "downloaded"
+
+  - name: "PRJNA1014231 - Zhang et al. Spatial Transcriptomics"
+    kind: "spatial"
+    access: "open"
+    portal: "SRA"
+    accession: "PRJNA1014231"
+    samples: 79
+    description: "GeoMX DSP whole-transcriptome of 25 SCLC tumors"
+    reference: "Zhang et al., Adv Sci 2024"
+    local_path: "data/sra/PRJNA1014231"
+    status: "metadata_only"
+
+  # Metabolomics
+  - name: "ST000220 - SCLC vs NSCLC Metabolomics"
+    kind: "metabolomics"
+    access: "open"
+    portal: "MetabolomicsWorkbench"
+    accession: "ST000220"
+    project: "PR000050"
+    samples: 21
+    description: "LC-MS tissue metabolomics: 7 SCLC, 7 NSCLC, 7 normal"
+    local_path: "data/metabolomics/ST000220"
+    status: "downloaded"
+
+  # Proteomics
+  - name: "PXD052033 - Desai et al. SCLC Proteomics"
+    kind: "proteomics"
+    access: "open"
+    portal: "PRIDE"
+    accession: "PXD052033"
+    files: 79
+    description: "Quantitative mass-spec proteomics from metastatic SCLC"
+    reference: "Desai et al., Cell Rep Med 2024"
+    local_path: "data/pride/PXD052033"
+    status: "metadata_only"
+    notes: "Raw files available via Aspera/FTP"
+
+  # ============================================
+  # CONTROLLED ACCESS - Requires Application
+  # ============================================
+
+  # EGA datasets
+  - name: "IMpower133 baseline bulk RNA"
+    kind: "bulk_rna"
+    access: "controlled"
+    portal: "EGA"
+    accession: "EGAS00001004888"
+    datasets:
+      - "EGAD00001006926"
+      - "EGAD00001006927"
+      - "EGAD00001006928"
+    samples: 271
+    description: "ES-SCLC tumors from IMpower133 trial (atezolizumab + chemo)"
+    reference: "Gay et al., Cancer Cell 2021"
+    subtypes: ["SCLC-A", "SCLC-N", "SCLC-P", "SCLC-I"]
+    notes: "chemo-IO response context, inflamed subsets"
+    status: "pending_access"
+
+  - name: "George et al. Nature 2015 - Multi-omics"
+    kind: "multi_omics"
+    access: "controlled"
+    portal: "EGA"
+    accession: "EGAS00001000925"
+    samples: 110
+    data_types:
+      - "WGS (110 tumors + normals)"
+      - "RNA-seq (59 tumors)"
+      - "SNP array (54 tumors)"
+    description: "Genomic profiles revealing TP53/RB1 loss, NOTCH mutations"
+    reference: "George et al., Nature 2015"
+    status: "pending_access"
+
+  # NGDC datasets
+  - name: "Tian et al. STTT 2022 - Patient scRNA-seq"
+    kind: "scrna"
+    access: "controlled"
+    portal: "NGDC"
+    accession: "PRJCA006026"
+    samples: 11
+    cells: 5000
+    description: "scRNA-seq from 11 SCLC tumors including pre/post-relapse pairs"
+    data_types:
+      - "scRNA-seq"
+      - "WGS"
+    reference: "Tian et al., Signal Transduct Target Ther 2022"
+    notes: "NE vs non-NE states, immune microenvironment"
+    status: "pending_access"
+
+  - name: "Jin et al. Cell Discovery 2024 - Spatial Proteomics"
+    kind: "spatial"
+    access: "controlled"
+    portal: "NGDC"
+    accession: "HRA004312"
+    samples: 44
+    cores: 132
+    description: "Nanostring GeoMX DSP with ~18K transcripts and ~60 proteins"
+    reference: "Jin et al., Cell Discovery 2024"
+    notes: "TIME heterogeneity, NE vs non-NE spatial niches"
+    status: "pending_access"
+
+  # CPTAC/PDC
+  - name: "Liu et al. Cell 2024 - CPTAC SCLC Proteogenomics"
+    kind: "proteogenomics"
+    access: "controlled"
+    portal: "PDC"
+    accession: "CPTAC-SCLC"
+    samples: 112
+    data_types:
+      - "WES"
+      - "RNA-seq"
+      - "Total proteomics"
+      - "Phosphoproteomics"
+    description: "Treatment-naive surgical SCLC with paired normal lungs"
+    reference: "Liu et al., Cell 2024"
+    notes: "Subtype-specific signaling, therapeutic targets"
+    status: "pending_access"
+
+  # Microbiome
+  - name: "Wang et al. 2024 - Gut Microbiome & Metabolites"
+    kind: "microbiome"
+    access: "request"
+    portal: "journal_supplement"
+    samples: 49
+    description: "16S rRNA + stool metabolomics from ES-SCLC patients on chemo-IO"
+    data_types:
+      - "16S rRNA sequencing"
+      - "LC-MS metabolomics"
+    reference: "Wang et al., J Thorac Dis 2024"
+    notes: "Faecalibacterium enrichment correlates with ICI response"
+    status: "pending_request"
+
+# ============================================
+# GitHub Tools
+# ============================================
+tools_github:
+  - name: "nf-core/rnaseq"
+    url: "https://github.com/nf-core/rnaseq"
+    pin: "v3.22.1"
+    purpose: "bulk RNA-seq processing/QC"
+    local_path: "tools/nf-core-rnaseq"
+    status: "cloned"
+
+  - name: "scverse/scvi-tools"
+    url: "https://github.com/scverse/scvi-tools"
+    pin: "latest"
+    purpose: "single-cell integration / latent embedding"
+    local_path: "tools/scvi-tools"
+    status: "cloned"
+
+  - name: "zqfang/GSEApy"
+    url: "https://github.com/zqfang/GSEApy"
+    pin: "latest"
+    purpose: "ssGSEA/GSVA/Enrichr"
+    local_path: "tools/GSEApy"
+    status: "cloned"
+
+# ============================================
+# Summary Statistics
+# ============================================
+summary:
+  total_datasets: 14
+  open_access: 7
+  controlled_access: 6
+  request_only: 1
+  github_tools: 3
+  data_types:
+    bulk_rna: 3
+    scrna: 4
+    spatial: 3
+    proteomics: 2
+    proteogenomics: 1
+    metabolomics: 1
+    microbiome: 1
+    multi_omics: 1

@@ -1,0 +1,17 @@
+{
+  "generated": "2026-01-14T01:50:14.502959",
+  "tools": {
+    "scvi-tools": {
+      "url": "https://github.com/scverse/scvi-tools",
+      "pin": "latest",
+      "commit_hash": "bf57711994f0c7a93f03e52f314b19830036b7e2",
+      "local_path": "G:\\\ub0b4 \ub4dc\ub77c\uc774\ube0c\\SCLC\\external\\tools\\scvi-tools"
+    },
+    "GSEApy": {
+      "url": "https://github.com/zqfang/GSEApy",
+      "pin": "latest",
+      "commit_hash": "b5b6945d99d556e776d35458b1c46a09eb5bf32f",
+      "local_path": "G:\\\ub0b4 \ub4dc\ub77c\uc774\ube0c\\SCLC\\external\\tools\\GSEApy"
+    }
+  }
+}

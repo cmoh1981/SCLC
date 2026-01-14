@@ -1,0 +1,175 @@
+# Cohort definitions for SCLC Chemo-IO Resistance Study
+# All datasets must be declared here - no hardcoded sources in scripts
+
+cohorts:
+  # ============================================
+  # OPEN ACCESS - Automated Download
+  # ============================================
+
+  bulk_rna:
+    - id: "GSE60052"
+      name: "SCLC Transcriptomes (Chinese cohort)"
+      portal: "GEO"
+      accession: "GSE60052"
+      access: "open"
+      samples: 86
+      description: "79 primary SCLC tumors + 7 normal lungs"
+      data_type: "counts"
+      platform: "Illumina HiSeq"
+      use_for:
+        - subtype_scoring
+        - immune_scoring
+        - module_discovery
+
+  scrna:
+    - id: "GSE138267"
+      name: "Stewart et al. scRNA-seq resistance"
+      portal: "GEO"
+      accession: "GSE138267"
+      access: "open"
+      samples: 25
+      description: "scRNA-seq of chemo-sensitive vs resistant SCLC PDX/CTCs"
+      reference: "Stewart et al., Nature Cancer 2020"
+      sra_bioproject: "PRJNA575243"
+      use_for:
+        - celltype_annotation
+        - resistance_heterogeneity
+
+    - id: "GSE138474"
+      name: "Stewart et al. parent series"
+      portal: "GEO"
+      accession: "GSE138474"
+      access: "open"
+      samples: 43
+      description: "Full dataset including bulk RNA subseries"
+      use_for:
+        - integration
+
+  spatial:
+    - id: "GSE267310"
+      name: "Desai et al. Spatial + Proteomics"
+      portal: "GEO"
+      accession: "GSE267310"
+      access: "open"
+      samples: 12
+      description: "10x Visium spatial transcriptomics from metastatic SCLC"
+      reference: "Desai et al., Cell Rep Med 2024"
+      use_for:
+        - spatial_immune_mapping
+        - niche_analysis
+
+    - id: "PRJNA1014231"
+      name: "Zhang et al. Spatial Transcriptomics"
+      portal: "SRA"
+      accession: "PRJNA1014231"
+      access: "open"
+      samples: 79
+      description: "GeoMX DSP whole-transcriptome of 25 SCLC tumors"
+      reference: "Zhang et al., Adv Sci 2024"
+      use_for:
+        - ITH_analysis
+        - subtype_spatial
+
+  metabolomics:
+    - id: "ST000220"
+      name: "SCLC vs NSCLC Metabolomics"
+      portal: "MetabolomicsWorkbench"
+      accession: "ST000220"
+      project: "PR000050"
+      access: "open"
+      samples: 21
+      description: "LC-MS tissue metabolomics: 7 SCLC, 7 NSCLC, 7 normal"
+      use_for:
+        - metabolic_validation
+
+  proteomics:
+    - id: "PXD052033"
+      name: "Desai et al. SCLC Proteomics"
+      portal: "PRIDE"
+      accession: "PXD052033"
+      access: "open"
+      files: 79
+      description: "Quantitative mass-spec proteomics from metastatic SCLC"
+      reference: "Desai et al., Cell Rep Med 2024"
+      use_for:
+        - protein_validation
+
+  # ============================================
+  # CONTROLLED ACCESS - Scaffold Only
+  # ============================================
+
+  controlled:
+    - id: "EGAS00001004888"
+      name: "IMpower133 baseline bulk RNA"
+      portal: "EGA"
+      accession: "EGAS00001004888"
+      access: "controlled"
+      samples: 271
+      description: "ES-SCLC tumors from IMpower133 trial"
+      reference: "Gay et al., Cancer Cell 2021"
+      dac: "Contact EGA DAC"
+      use_for:
+        - subtype_validation
+        - clinical_outcome
+
+    - id: "EGAS00001000925"
+      name: "George et al. Nature 2015 Multi-omics"
+      portal: "EGA"
+      accession: "EGAS00001000925"
+      access: "controlled"
+      samples: 110
+      description: "WGS + RNA-seq + SNP array"
+      reference: "George et al., Nature 2015"
+      dac: "Contact EGA DAC"
+
+    - id: "PRJCA006026"
+      name: "Tian et al. Patient scRNA-seq"
+      portal: "NGDC"
+      accession: "PRJCA006026"
+      access: "controlled"
+      samples: 11
+      description: "scRNA-seq from 11 SCLC tumors"
+      reference: "Tian et al., STTT 2022"
+
+    - id: "HRA004312"
+      name: "Jin et al. Spatial Proteomics"
+      portal: "NGDC"
+      accession: "HRA004312"
+      access: "controlled"
+      samples: 44
+      description: "Nanostring GeoMX DSP"
+      reference: "Jin et al., Cell Discovery 2024"
+
+    - id: "CPTAC-SCLC"
+      name: "Liu et al. CPTAC Proteogenomics"
+      portal: "PDC"
+      accession: "CPTAC-SCLC"
+      access: "controlled"
+      samples: 112
+      description: "WES + RNA-seq + proteomics + phosphoproteomics"
+      reference: "Liu et al., Cell 2024"
+
+# External validation databases
+external_databases:
+  disgenet:
+    api_base: "https://www.disgenet.org/api"
+    version: "v7"
+    requires_key: true
+    env_var: "DISGENET_API_KEY"
+
+  depmap:
+    source: "local"  # or "download"
+    files:
+      crispr: "DepMap_CRISPR_gene_effect.csv"
+      expression: "DepMap_expression.csv"
+      drug_response: "DepMap_drug_sensitivity.csv"
+    enabled: false  # set to true when files are available
+
+  dgidb:
+    api_base: "https://dgidb.org/api"
+    version: "v4"
+    requires_key: false
+
+  lincs:
+    enabled: false  # requires L1000 data download
+    note: "Use CMap web interface for manual validation"

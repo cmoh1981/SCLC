@@ -1,0 +1,73 @@
+# Environment and secrets
+.env
+.env.local
+*.env
+
+# Cache directories
+.cache/
+data/cache/
+results/disgenet/cache/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Raw data (large files)
+data/raw/
+data/external/
+data/depmap/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Logs (optional - comment out to track logs)
+# results/logs/
+
+# Intermediate results (can be regenerated)
+results/intermediate/
+
+# Large result files (optional)
+# *.h5ad
+# *.h5
+
+# Tools (cloned repos)
+tools/nf-core-rnaseq/
+tools/scvi-tools/
+tools/GSEApy/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Distribution
+dist/
+build/
+*.egg-info/
+
+# Temp files
+tmpclaude-*
+nul
+
+# Claude
+.claude/
+
+# Large processed data
+data/processed/
+*.h5ad
+*.tar.gz
+
+# Env files
+.env.txt

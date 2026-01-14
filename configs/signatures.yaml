@@ -1,0 +1,275 @@
+# Gene signatures for SCLC subtype and immune scoring
+# Sources: Gay et al. 2021 (IMpower133), Rudin et al. 2019, literature consensus
+
+sclc_subtypes:
+  # Four canonical SCLC transcriptional subtypes
+  # Based on master TF expression and downstream programs
+
+  SCLC_A:
+    name: "ASCL1-high (Neuroendocrine)"
+    master_tf: "ASCL1"
+    markers:
+      - ASCL1
+      - DLL3
+      - INSM1
+      - CHGA
+      - SYP
+      - NCAM1
+      - GRP
+      - CALCA
+      - DDC
+      - SOX2
+    frequency: "~50%"
+    characteristics:
+      - "Classic neuroendocrine"
+      - "High DLL3 expression"
+      - "Targetable by Rova-T (historical)"
+
+  SCLC_N:
+    name: "NEUROD1-high (Neuroendocrine variant)"
+    master_tf: "NEUROD1"
+    markers:
+      - NEUROD1
+      - HES6
+      - MYC
+      - MYCL
+      - L1CAM
+      - NRCAM
+      - EYA2
+      - SOX11
+    frequency: "~20%"
+    characteristics:
+      - "Variant neuroendocrine"
+      - "MYC amplification common"
+      - "Aurora kinase sensitivity"
+
+  SCLC_P:
+    name: "POU2F3-high (Tuft cell-like)"
+    master_tf: "POU2F3"
+    markers:
+      - POU2F3
+      - SOX9
+      - TRPM5
+      - GFI1B
+      - ASCL2
+      - AVIL
+      - CHAT
+      - GNAT3
+      - PLCB2
+    frequency: "~8%"
+    characteristics:
+      - "Non-neuroendocrine"
+      - "Tuft cell features"
+      - "Rare subtype"
+
+  SCLC_I:
+    name: "Inflamed (Immune-high)"
+    description: "Low NE markers, high immune/inflammatory genes"
+    markers:
+      - HLA-A
+      - HLA-B
+      - HLA-C
+      - HLA-DRA
+      - HLA-DRB1
+      - CD74
+      - B2M
+      - TAP1
+      - STAT1
+      - IRF1
+      - CXCL9
+      - CXCL10
+      - CCL5
+      - IFNG
+      - CD8A
+    frequency: "~18%"
+    characteristics:
+      - "Non-neuroendocrine"
+      - "Higher immune infiltration"
+      - "Better ICI response"
+      - "EMT features"
+
+immune_signatures:
+  # Core immune axis signatures for state scoring
+
+  t_effector:
+    name: "T-cell Effector / Cytotoxic"
+    genes:
+      - CD8A
+      - CD8B
+      - GZMA
+      - GZMB
+      - GZMK
+      - PRF1
+      - IFNG
+      - CXCL9
+      - CXCL10
+      - CXCL11
+      - TBX21
+      - EOMES
+      - NKG7
+      - GNLY
+    interpretation: "High = cytotoxic T-cell activity"
+
+  ifn_gamma:
+    name: "IFN-gamma Response"
+    genes:
+      - IFNG
+      - STAT1
+      - IRF1
+      - IRF9
+      - GBP1
+      - GBP2
+      - GBP4
+      - GBP5
+      - IDO1
+      - CXCL9
+      - CXCL10
+      - CXCL11
+      - HLA-DRA
+      - HLA-DRB1
+      - TAP1
+      - PSMB9
+    interpretation: "High = active IFN-gamma signaling"
+
+  antigen_presentation:
+    name: "Antigen Presentation"
+    genes:
+      - HLA-A
+      - HLA-B
+      - HLA-C
+      - HLA-DPA1
+      - HLA-DPB1
+      - HLA-DQA1
+      - HLA-DQB1
+      - HLA-DRA
+      - HLA-DRB1
+      - B2M
+      - TAP1
+      - TAP2
+      - PSMB8
+      - PSMB9
+      - PSMB10
+      - CD74
+    interpretation: "High = intact antigen presentation machinery"
+
+  myeloid_tam:
+    name: "Myeloid / TAM"
+    genes:
+      - CD68
+      - CD163
+      - CSF1R
+      - MRC1
+      - MSR1
+      - MARCO
+      - CD14
+      - FCGR1A
+      - FCGR2A
+      - FCGR3A
+      - TREM2
+      - APOE
+      - C1QA
+      - C1QB
+      - C1QC
+    interpretation: "High = tumor-associated macrophage infiltration"
+
+  treg_immunosuppressive:
+    name: "Treg / Immunosuppressive"
+    genes:
+      - FOXP3
+      - IL2RA
+      - CTLA4
+      - TIGIT
+      - TNFRSF18
+      - IL10
+      - TGFB1
+      - CD274  # PD-L1
+      - PDCD1LG2  # PD-L2
+      - LAG3
+      - HAVCR2  # TIM-3
+      - IDO1
+      - ARG1
+    interpretation: "High = immunosuppressive microenvironment"
+
+  exhaustion:
+    name: "T-cell Exhaustion"
+    genes:
+      - PDCD1  # PD-1
+      - CTLA4
+      - LAG3
+      - HAVCR2  # TIM-3
+      - TIGIT
+      - TOX
+      - ENTPD1
+      - BATF
+      - EOMES
+    interpretation: "High = exhausted T-cell phenotype"
+
+resistance_signatures:
+  # Signatures associated with chemo-IO resistance
+
+  emt:
+    name: "EMT (Epithelial-Mesenchymal Transition)"
+    genes:
+      - VIM
+      - CDH2
+      - SNAI1
+      - SNAI2
+      - TWIST1
+      - TWIST2
+      - ZEB1
+      - ZEB2
+      - FN1
+      - ACTA2
+      - SPARC
+      - MMP2
+      - MMP9
+    interpretation: "High = mesenchymal phenotype, potential resistance"
+
+  dna_repair:
+    name: "DNA Damage Repair"
+    genes:
+      - BRCA1
+      - BRCA2
+      - RAD51
+      - ATM
+      - ATR
+      - CHEK1
+      - CHEK2
+      - TP53BP1
+      - PARP1
+      - XRCC1
+      - ERCC1
+      - MSH2
+      - MLH1
+    interpretation: "High = enhanced DNA repair, potential platinum resistance"
+
+  abc_transporters:
+    name: "ABC Drug Transporters"
+    genes:
+      - ABCB1  # MDR1/P-gp
+      - ABCC1  # MRP1
+      - ABCC2
+      - ABCG2  # BCRP
+    interpretation: "High = drug efflux, multi-drug resistance"
+
+proliferation:
+  name: "Proliferation"
+  genes:
+    - MKI67
+    - TOP2A
+    - PCNA
+    - MCM2
+    - MCM6
+    - CDK1
+    - CCNB1
+    - CCNA2
+    - BUB1
+    - AURKA
+    - AURKB
+    - PLK1
+
+scoring:
+  method: "ssgsea"  # ssgsea, gsva, or mean
+  min_genes: 5  # minimum genes required for scoring
+  normalize: true
+  scale: true

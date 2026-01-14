@@ -1,0 +1,12 @@
+stage	script	error_type	key_message	file_path	likely_root_cause
+stage0_bootstrap	scripts/0_bootstrap.py	ERROR	Failed to clone https://github.com/nf-core/rnaseq: None	results\logs\stage0_bootstrap.log	Unknown
+stage2_preprocess_bulk	scripts/2_preprocess_bulk.py	ERROR	Bulk RNA preprocessing failed: No expression matrix found in G:\내 드라이브\SCLC\data\raw\geo\GSE60052	results\logs\stage2_preprocess_bulk.log	Missing input file
+stage3_preprocess_scrna	scripts/3_preprocess_scrna.py	ERROR	scRNA preprocessing failed: Did not find file G:\내 드라이브\SCLC\data\raw\geo\GSE138267\matrix.mtx.gz.	results\logs\stage3_preprocess_scrna.log	Missing data file
+stage4_preprocess_spatial	scripts/4_preprocess_spatial.py	ERROR	Spatial preprocessing failed: [Errno 13] Permission denied: 'G:\\내 드라이브\\SCLC\\data\\raw\\geo\\GSE267310'	results\logs\stage4_preprocess_spatial.log	Permission issue
+stage5_subtype_scoring	scripts/5_subtype_scoring.py	ERROR	Expression matrix not found: G:\내 드라이브\SCLC\data\processed\bulk\bulk_expression_matrix.tsv	results\logs\stage5_subtype_scoring.log	Missing input file
+stage5_subtype_scoring	scripts/5_subtype_scoring.py	ERROR	Please run Stage 2 first.	results\logs\stage5_subtype_scoring.log	Unknown
+stage6_immune_scoring	scripts/6_immune_scoring.py	ERROR	Immune scoring failed: Found array with 0 sample(s) (shape=(0, 6)) while a minimum of 1 is required by StandardScaler.	results\logs\stage6_immune_scoring.log	Empty data
+stage9_drug_repositioning	scripts/9_drug_repositioning.py	ERROR	DGIdb query failed: Expecting value: line 1 column 1 (char 0)	results\logs\stage9_drug_repositioning.log	API/Network issue
+stage11_figures_tables	scripts/11_figures_tables.py	ERROR	Failed to create Fig2: [Errno 2] No such file or directory: 'G:\\내 드라이브\\SCLC\\results\\immune\\immune_states.tsv'	results\logs\stage11_figures_tables.log	Missing dependency
+stage9b_drug_fast	scripts/9b_drug_fast.py	ERROR	DGIdb query failed: Expecting value: line 1 column 1 (char 0)	results\logs\stage9b_drug_fast.log	API/Network issue
+stage9c_drug_sclc	scripts/9c_drug_sclc.py	ERROR	DGIdb query failed: Expecting value: line 1 column 1 (char 0)	results\logs\stage9c_drug_sclc.log	API/Network issue
