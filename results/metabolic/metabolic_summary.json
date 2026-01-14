@@ -1,0 +1,335 @@
+{
+  "n_reactions": 33,
+  "n_metabolites": 34,
+  "n_genes": 46,
+  "subtypes_analyzed": [
+    "SCLC_N",
+    "SCLC_P",
+    "SCLC_I",
+    "SCLC_A"
+  ],
+  "top_vulnerabilities": [
+    {
+      "reaction": "ATPM",
+      "subtype": "SCLC_A",
+      "flux": 1.0,
+      "specificity": 0.0,
+      "vulnerability_score": 1.0
+    },
+    {
+      "reaction": "ATPM",
+      "subtype": "SCLC_I",
+      "flux": 1.0,
+      "specificity": 0.0,
+      "vulnerability_score": 1.0
+    },
+    {
+      "reaction": "ATPM",
+      "subtype": "SCLC_P",
+      "flux": 1.0,
+      "specificity": 0.0,
+      "vulnerability_score": 1.0
+    },
+    {
+      "reaction": "ATPM",
+      "subtype": "SCLC_N",
+      "flux": 1.0,
+      "specificity": 0.0,
+      "vulnerability_score": 1.0
+    },
+    {
+      "reaction": "DM_h2o",
+      "subtype": "SCLC_N",
+      "flux": -0.806451612903226,
+      "specificity": -4.130029651605583e-16,
+      "vulnerability_score": 0.8064516129032263
+    },
+    {
+      "reaction": "DM_h2o",
+      "subtype": "SCLC_A",
+      "flux": -0.806451612903226,
+      "specificity": -4.130029651605583e-16,
+      "vulnerability_score": 0.8064516129032263
+    },
+    {
+      "reaction": "DM_h2o",
+      "subtype": "SCLC_I",
+      "flux": -0.8064516129032256,
+      "specificity": 2.753353101070388e-16,
+      "vulnerability_score": 0.8064516129032259
+    },
+    {
+      "reaction": "DM_h2o",
+      "subtype": "SCLC_P",
+      "flux": -0.8064516129032254,
+      "specificity": 5.506706202140776e-16,
+      "vulnerability_score": 0.8064516129032258
+    },
+    {
+      "reaction": "OXPHOS",
+      "subtype": "SCLC_A",
+      "flux": 0.3870967741935481,
+      "specificity": 0.0,
+      "vulnerability_score": 0.3870967741935481
+    },
+    {
+      "reaction": "OXPHOS",
+      "subtype": "SCLC_I",
+      "flux": 0.3870967741935481,
+      "specificity": 0.0,
+      "vulnerability_score": 0.3870967741935481
+    },
+    {
+      "reaction": "OXPHOS",
+      "subtype": "SCLC_P",
+      "flux": 0.3870967741935481,
+      "specificity": 0.0,
+      "vulnerability_score": 0.3870967741935481
+    },
+    {
+      "reaction": "OXPHOS",
+      "subtype": "SCLC_N",
+      "flux": 0.3870967741935481,
+      "specificity": 0.0,
+      "vulnerability_score": 0.3870967741935481
+    },
+    {
+      "reaction": "EX_o2_e",
+      "subtype": "SCLC_N",
+      "flux": -0.19354838709677405,
+      "specificity": 0.0,
+      "vulnerability_score": 0.19354838709677405
+    },
+    {
+      "reaction": "EX_o2_e",
+      "subtype": "SCLC_P",
+      "flux": -0.19354838709677405,
+      "specificity": 0.0,
+      "vulnerability_score": 0.19354838709677405
+    },
+    {
+      "reaction": "EX_o2_e",
+      "subtype": "SCLC_I",
+      "flux": -0.19354838709677405,
+      "specificity": 0.0,
+      "vulnerability_score": 0.19354838709677405
+    },
+    {
+      "reaction": "EX_o2_e",
+      "subtype": "SCLC_A",
+      "flux": -0.19354838709677405,
+      "specificity": 0.0,
+      "vulnerability_score": 0.19354838709677405
+    },
+    {
+      "reaction": "O2t",
+      "subtype": "SCLC_A",
+      "flux": 0.19354838709677405,
+      "specificity": 0.0,
+      "vulnerability_score": 0.19354838709677405
+    },
+    {
+      "reaction": "O2t",
+      "subtype": "SCLC_I",
+      "flux": 0.19354838709677405,
+      "specificity": 0.0,
+      "vulnerability_score": 0.19354838709677405
+    },
+    {
+      "reaction": "O2t",
+      "subtype": "SCLC_P",
+      "flux": 0.19354838709677405,
+      "specificity": 0.0,
+      "vulnerability_score": 0.19354838709677405
+    },
+    {
+      "reaction": "O2t",
+      "subtype": "SCLC_N",
+      "flux": 0.19354838709677405,
+      "specificity": 0.0,
+      "vulnerability_score": 0.19354838709677405
+    }
+  ],
+  "top_drug_targets": [
+    {
+      "reaction": "OXPHOS",
+      "subtype": "SCLC_A",
+      "flux": 0.3870967741935481,
+      "vulnerability_score": 0.3870967741935481,
+      "drug": "Metformin",
+      "target": "Complex I/V",
+      "pathway": "OXPHOS"
+    },
+    {
+      "reaction": "OXPHOS",
+      "subtype": "SCLC_A",
+      "flux": 0.3870967741935481,
+      "vulnerability_score": 0.3870967741935481,
+      "drug": "IACS-010759",
+      "target": "Complex I/V",
+      "pathway": "OXPHOS"
+    },
+    {
+      "reaction": "OXPHOS",
+      "subtype": "SCLC_A",
+      "flux": 0.3870967741935481,
+      "vulnerability_score": 0.3870967741935481,
+      "drug": "Oligomycin",
+      "target": "Complex I/V",
+      "pathway": "OXPHOS"
+    },
+    {
+      "reaction": "OXPHOS",
+      "subtype": "SCLC_I",
+      "flux": 0.3870967741935481,
+      "vulnerability_score": 0.3870967741935481,
+      "drug": "Metformin",
+      "target": "Complex I/V",
+      "pathway": "OXPHOS"
+    },
+    {
+      "reaction": "OXPHOS",
+      "subtype": "SCLC_I",
+      "flux": 0.3870967741935481,
+      "vulnerability_score": 0.3870967741935481,
+      "drug": "IACS-010759",
+      "target": "Complex I/V",
+      "pathway": "OXPHOS"
+    },
+    {
+      "reaction": "OXPHOS",
+      "subtype": "SCLC_I",
+      "flux": 0.3870967741935481,
+      "vulnerability_score": 0.3870967741935481,
+      "drug": "Oligomycin",
+      "target": "Complex I/V",
+      "pathway": "OXPHOS"
+    },
+    {
+      "reaction": "OXPHOS",
+      "subtype": "SCLC_P",
+      "flux": 0.3870967741935481,
+      "vulnerability_score": 0.3870967741935481,
+      "drug": "Metformin",
+      "target": "Complex I/V",
+      "pathway": "OXPHOS"
+    },
+    {
+      "reaction": "OXPHOS",
+      "subtype": "SCLC_P",
+      "flux": 0.3870967741935481,
+      "vulnerability_score": 0.3870967741935481,
+      "drug": "IACS-010759",
+      "target": "Complex I/V",
+      "pathway": "OXPHOS"
+    },
+    {
+      "reaction": "OXPHOS",
+      "subtype": "SCLC_P",
+      "flux": 0.3870967741935481,
+      "vulnerability_score": 0.3870967741935481,
+      "drug": "Oligomycin",
+      "target": "Complex I/V",
+      "pathway": "OXPHOS"
+    },
+    {
+      "reaction": "OXPHOS",
+      "subtype": "SCLC_N",
+      "flux": 0.3870967741935481,
+      "vulnerability_score": 0.3870967741935481,
+      "drug": "Metformin",
+      "target": "Complex I/V",
+      "pathway": "OXPHOS"
+    },
+    {
+      "reaction": "OXPHOS",
+      "subtype": "SCLC_N",
+      "flux": 0.3870967741935481,
+      "vulnerability_score": 0.3870967741935481,
+      "drug": "IACS-010759",
+      "target": "Complex I/V",
+      "pathway": "OXPHOS"
+    },
+    {
+      "reaction": "OXPHOS",
+      "subtype": "SCLC_N",
+      "flux": 0.3870967741935481,
+      "vulnerability_score": 0.3870967741935481,
+      "drug": "Oligomycin",
+      "target": "Complex I/V",
+      "pathway": "OXPHOS"
+    },
+    {
+      "reaction": "PDH",
+      "subtype": "SCLC_A",
+      "flux": 0.06451612903225801,
+      "vulnerability_score": 0.06451612903225801,
+      "drug": "DCA",
+      "target": "PDK1",
+      "pathway": "Pyruvate oxidation"
+    },
+    {
+      "reaction": "PDH",
+      "subtype": "SCLC_A",
+      "flux": 0.06451612903225801,
+      "vulnerability_score": 0.06451612903225801,
+      "drug": "CPI-613",
+      "target": "PDK1",
+      "pathway": "Pyruvate oxidation"
+    },
+    {
+      "reaction": "PDH",
+      "subtype": "SCLC_I",
+      "flux": 0.06451612903225801,
+      "vulnerability_score": 0.06451612903225801,
+      "drug": "DCA",
+      "target": "PDK1",
+      "pathway": "Pyruvate oxidation"
+    },
+    {
+      "reaction": "PDH",
+      "subtype": "SCLC_I",
+      "flux": 0.06451612903225801,
+      "vulnerability_score": 0.06451612903225801,
+      "drug": "CPI-613",
+      "target": "PDK1",
+      "pathway": "Pyruvate oxidation"
+    },
+    {
+      "reaction": "PDH",
+      "subtype": "SCLC_P",
+      "flux": 0.06451612903225801,
+      "vulnerability_score": 0.06451612903225801,
+      "drug": "DCA",
+      "target": "PDK1",
+      "pathway": "Pyruvate oxidation"
+    },
+    {
+      "reaction": "PDH",
+      "subtype": "SCLC_P",
+      "flux": 0.06451612903225801,
+      "vulnerability_score": 0.06451612903225801,
+      "drug": "CPI-613",
+      "target": "PDK1",
+      "pathway": "Pyruvate oxidation"
+    },
+    {
+      "reaction": "PDH",
+      "subtype": "SCLC_N",
+      "flux": 0.06451612903225801,
+      "vulnerability_score": 0.06451612903225801,
+      "drug": "DCA",
+      "target": "PDK1",
+      "pathway": "Pyruvate oxidation"
+    },
+    {
+      "reaction": "PDH",
+      "subtype": "SCLC_N",
+      "flux": 0.06451612903225801,
+      "vulnerability_score": 0.06451612903225801,
+      "drug": "CPI-613",
+      "target": "PDK1",
+      "pathway": "Pyruvate oxidation"
+    }
+  ]
+}
