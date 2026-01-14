@@ -68,6 +68,51 @@ Importantly, immune states were distributed across all transcriptional subtypes 
 
 Correlation analysis revealed strong positive associations between T-effector, IFN-γ, and antigen presentation signatures (r>0.7), while exhaustion markers showed moderate correlation with infiltration signatures (r=0.4-0.6) (**Figure 2C**). This suggests coordinated immune activation with progressive dysfunction in a subset of tumors.
 
+### Molecular Mechanisms of Immunotherapy Resistance
+
+To understand why SCLC subtypes differ in immunotherapy sensitivity, we systematically analyzed 12 IO resistance signatures encompassing antigen presentation, T-cell exhaustion, immunosuppressive cells, and signaling pathways (**Figure 7A**).
+
+#### Subtype-Specific Resistance Mechanisms
+
+**SCLC-A (Low IO Sensitivity)**:
+Analysis revealed defective antigen presentation (low HLA class I/II expression, reduced TAP1/TAP2) and impaired interferon signaling (low STAT1, IRF1, IFNG). The neuroendocrine differentiation program actively suppresses immune recognition through:
+- Low MHC class I expression (β2M, HLA-A/B/C downregulation)
+- Reduced interferon-γ response genes
+- Limited T-cell infiltration ("immune desert" phenotype)
+
+**SCLC-N (Low IO Sensitivity)**:
+Similar to SCLC-A, SCLC-N tumors showed antigen presentation defects, compounded by:
+- WNT/β-catenin pathway activation (immune exclusion)
+- Metabolic immune suppression (elevated IDO1, ARG1)
+- High MYCN driving proliferation over immunogenicity
+
+**SCLC-P (Moderate IO Sensitivity)**:
+SCLC-P tumors exhibited a distinct resistance profile:
+- TGF-β signaling activation (TGFB1, SMAD2/3)
+- Cancer-associated fibroblast (CAF) infiltration
+- M2-polarized tumor-associated macrophages
+- Variable T-cell infiltration
+
+**SCLC-I (High IO Sensitivity, but Acquired Resistance)**:
+Despite high baseline immune infiltration, SCLC-I tumors showed signatures associated with adaptive resistance:
+- T-cell exhaustion (high PD-1, LAG-3, TIM-3, TIGIT)
+- Regulatory T-cell infiltration
+- Adaptive PD-L1 upregulation
+
+#### Therapeutic Strategies to Overcome Resistance (**Figure 7B-D**)
+
+Based on resistance mechanism analysis, we propose subtype-specific combination strategies:
+
+| Subtype | Primary Resistance | Strategy | Drugs |
+|---------|-------------------|----------|-------|
+| SCLC-A | Low antigen presentation | Enhance MHC expression | HDAC inhibitors, decitabine |
+| SCLC-A/N | Defective IFN signaling | STING agonists | ADU-S100, oncolytic viruses |
+| SCLC-N | WNT activation | WNT inhibitors | DKN-01 (anti-DKK1) |
+| SCLC-P | TGF-β signaling | TGF-β blockade | Galunisertib, bintrafusp alfa |
+| SCLC-I | T-cell exhaustion | Next-gen checkpoints | Anti-LAG3, anti-TIGIT |
+
+These mechanism-based combinations provide rationale for clinical trials beyond standard PD-L1 inhibition.
+
 ### Drug Repositioning Identifies Therapeutic Candidates
 
 To nominate therapeutic strategies for chemo-IO resistant SCLC, we performed systematic drug repositioning using the Drug-Gene Interaction Database (DGIdb). We queried 57 curated SCLC-associated genes encompassing:

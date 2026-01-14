@@ -1,0 +1,2 @@
+subtype	mechanism	description	target	drugs	clinical_trials
+SCLC_I	ifn_signaling	Interferon-gamma signaling	Restore IFN signaling	STING agonists (ADU-S100), IFN-alpha, Oncolytic viruses	NCT03172936, NCT03937895

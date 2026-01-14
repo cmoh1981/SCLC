@@ -1,0 +1,49 @@
+subtype	signature	score	vs_others	description	is_resistance_mechanism	direction
+SCLC_A	ifn_signaling	0.2233067878197227	0.25775177531578974	Interferon-gamma signaling	False	low
+SCLC_A	t_cell_exhaustion	0.07330989849254564	0.08702350998030978	T-cell exhaustion markers	False	high
+SCLC_A	hla_class_ii	0.050843158047724615	0.041675746291544316	MHC class II presentation	False	low
+SCLC_A	antigen_presentation	0.0	0.0	MHC class I antigen presentation machinery	False	low
+SCLC_A	treg_signature	0.0	0.0	Regulatory T-cell markers	False	high
+SCLC_A	mdsc_signature	0.0	0.0	Myeloid-derived suppressor cells	False	high
+SCLC_A	tam_m2	0.0	0.0	M2 tumor-associated macrophages	False	high
+SCLC_A	tgfb_signaling	0.0	0.0	TGF-beta immunosuppressive signaling	False	high
+SCLC_A	wnt_bcatenin	0.0	0.0	WNT/beta-catenin pathway (immune exclusion)	False	high
+SCLC_A	metabolic_immune_suppression	0.0	0.0	Metabolic pathways suppressing immunity	False	high
+SCLC_A	caf_exclusion	0.0	0.0	Cancer-associated fibroblasts (T-cell exclusion)	False	high
+SCLC_A	angiogenesis	0.0	0.0	Tumor angiogenesis (immunosuppressive)	False	high
+SCLC_N	t_cell_exhaustion	0.19032451829453087	0.23885186046430476	T-cell exhaustion markers	False	high
+SCLC_N	ifn_signaling	0.18587987458425081	0.22178913984074244	Interferon-gamma signaling	False	low
+SCLC_N	hla_class_ii	0.17394885741401145	0.19920688429706343	MHC class II presentation	False	low
+SCLC_N	antigen_presentation	0.0	0.0	MHC class I antigen presentation machinery	False	low
+SCLC_N	treg_signature	0.0	0.0	Regulatory T-cell markers	False	high
+SCLC_N	mdsc_signature	0.0	0.0	Myeloid-derived suppressor cells	False	high
+SCLC_N	tam_m2	0.0	0.0	M2 tumor-associated macrophages	False	high
+SCLC_N	tgfb_signaling	0.0	0.0	TGF-beta immunosuppressive signaling	False	high
+SCLC_N	wnt_bcatenin	0.0	0.0	WNT/beta-catenin pathway (immune exclusion)	False	high
+SCLC_N	metabolic_immune_suppression	0.0	0.0	Metabolic pathways suppressing immunity	False	high
+SCLC_N	caf_exclusion	0.0	0.0	Cancer-associated fibroblasts (T-cell exclusion)	False	high
+SCLC_N	angiogenesis	0.0	0.0	Tumor angiogenesis (immunosuppressive)	False	high
+SCLC_P	t_cell_exhaustion	-0.061055146699948104	-0.09432850312197315	T-cell exhaustion markers	False	high
+SCLC_P	hla_class_ii	-0.006283441172344783	-0.03427911484607584	MHC class II presentation	False	low
+SCLC_P	ifn_signaling	0.008280982355823105	-0.0033656705697244736	Interferon-gamma signaling	False	low
+SCLC_P	antigen_presentation	0.0	0.0	MHC class I antigen presentation machinery	False	low
+SCLC_P	treg_signature	0.0	0.0	Regulatory T-cell markers	False	high
+SCLC_P	mdsc_signature	0.0	0.0	Myeloid-derived suppressor cells	False	high
+SCLC_P	tam_m2	0.0	0.0	M2 tumor-associated macrophages	False	high
+SCLC_P	tgfb_signaling	0.0	0.0	TGF-beta immunosuppressive signaling	False	high
+SCLC_P	wnt_bcatenin	0.0	0.0	WNT/beta-catenin pathway (immune exclusion)	False	high
+SCLC_P	metabolic_immune_suppression	0.0	0.0	Metabolic pathways suppressing immunity	False	high
+SCLC_P	caf_exclusion	0.0	0.0	Cancer-associated fibroblasts (T-cell exclusion)	False	high
+SCLC_P	angiogenesis	0.0	0.0	Tumor angiogenesis (immunosuppressive)	False	high
+SCLC_I	ifn_signaling	-0.25131584762733933	-0.36318017098429456	Interferon-gamma signaling	True	low
+SCLC_I	hla_class_ii	-0.09574889186522517	-0.1556119081582909	MHC class II presentation	False	low
+SCLC_I	t_cell_exhaustion	-0.10953785377642972	-0.1539715723633853	T-cell exhaustion markers	False	high
+SCLC_I	antigen_presentation	0.0	0.0	MHC class I antigen presentation machinery	False	low
+SCLC_I	treg_signature	0.0	0.0	Regulatory T-cell markers	False	high
+SCLC_I	mdsc_signature	0.0	0.0	Myeloid-derived suppressor cells	False	high
+SCLC_I	tam_m2	0.0	0.0	M2 tumor-associated macrophages	False	high
+SCLC_I	tgfb_signaling	0.0	0.0	TGF-beta immunosuppressive signaling	False	high
+SCLC_I	wnt_bcatenin	0.0	0.0	WNT/beta-catenin pathway (immune exclusion)	False	high
+SCLC_I	metabolic_immune_suppression	0.0	0.0	Metabolic pathways suppressing immunity	False	high
+SCLC_I	caf_exclusion	0.0	0.0	Cancer-associated fibroblasts (T-cell exclusion)	False	high
+SCLC_I	angiogenesis	0.0	0.0	Tumor angiogenesis (immunosuppressive)	False	high

@@ -1,0 +1,232 @@
+{
+  "subtype_profiles": {
+    "SCLC_A": {
+      "primary_mechanisms": [
+        "antigen_presentation",
+        "ifn_signaling",
+        "neuroendocrine"
+      ],
+      "description": "Low MHC-I, poor IFN signaling, neuroendocrine immune evasion",
+      "io_sensitivity": "Low"
+    },
+    "SCLC_N": {
+      "primary_mechanisms": [
+        "antigen_presentation",
+        "wnt_bcatenin",
+        "metabolic_immune_suppression"
+      ],
+      "description": "Low antigen presentation, WNT activation, metabolic suppression",
+      "io_sensitivity": "Low"
+    },
+    "SCLC_P": {
+      "primary_mechanisms": [
+        "tgfb_signaling",
+        "caf_exclusion",
+        "tam_m2"
+      ],
+      "description": "TGF-beta driven, T-cell exclusion, M2 macrophage infiltration",
+      "io_sensitivity": "Moderate"
+    },
+    "SCLC_I": {
+      "primary_mechanisms": [
+        "t_cell_exhaustion",
+        "treg_signature",
+        "adaptive_resistance"
+      ],
+      "description": "T-cell exhaustion, Treg infiltration, adaptive PD-L1",
+      "io_sensitivity": "High (but can develop resistance)"
+    }
+  },
+  "mechanisms": {
+    "SCLC_A": [
+      {
+        "signature": "ifn_signaling",
+        "score": 0.2233067878197227,
+        "vs_others": 0.25775177531578974,
+        "description": "Interferon-gamma signaling",
+        "is_resistance_mechanism": false,
+        "direction": "low"
+      },
+      {
+        "signature": "t_cell_exhaustion",
+        "score": 0.07330989849254564,
+        "vs_others": 0.08702350998030978,
+        "description": "T-cell exhaustion markers",
+        "is_resistance_mechanism": false,
+        "direction": "high"
+      },
+      {
+        "signature": "hla_class_ii",
+        "score": 0.050843158047724615,
+        "vs_others": 0.041675746291544316,
+        "description": "MHC class II presentation",
+        "is_resistance_mechanism": false,
+        "direction": "low"
+      },
+      {
+        "signature": "antigen_presentation",
+        "score": 0.0,
+        "vs_others": 0.0,
+        "description": "MHC class I antigen presentation machinery",
+        "is_resistance_mechanism": false,
+        "direction": "low"
+      },
+      {
+        "signature": "treg_signature",
+        "score": 0.0,
+        "vs_others": 0.0,
+        "description": "Regulatory T-cell markers",
+        "is_resistance_mechanism": false,
+        "direction": "high"
+      }
+    ],
+    "SCLC_N": [
+      {
+        "signature": "t_cell_exhaustion",
+        "score": 0.19032451829453087,
+        "vs_others": 0.23885186046430476,
+        "description": "T-cell exhaustion markers",
+        "is_resistance_mechanism": false,
+        "direction": "high"
+      },
+      {
+        "signature": "ifn_signaling",
+        "score": 0.18587987458425081,
+        "vs_others": 0.22178913984074244,
+        "description": "Interferon-gamma signaling",
+        "is_resistance_mechanism": false,
+        "direction": "low"
+      },
+      {
+        "signature": "hla_class_ii",
+        "score": 0.17394885741401145,
+        "vs_others": 0.19920688429706343,
+        "description": "MHC class II presentation",
+        "is_resistance_mechanism": false,
+        "direction": "low"
+      },
+      {
+        "signature": "antigen_presentation",
+        "score": 0.0,
+        "vs_others": 0.0,
+        "description": "MHC class I antigen presentation machinery",
+        "is_resistance_mechanism": false,
+        "direction": "low"
+      },
+      {
+        "signature": "treg_signature",
+        "score": 0.0,
+        "vs_others": 0.0,
+        "description": "Regulatory T-cell markers",
+        "is_resistance_mechanism": false,
+        "direction": "high"
+      }
+    ],
+    "SCLC_P": [
+      {
+        "signature": "t_cell_exhaustion",
+        "score": -0.061055146699948104,
+        "vs_others": -0.09432850312197315,
+        "description": "T-cell exhaustion markers",
+        "is_resistance_mechanism": false,
+        "direction": "high"
+      },
+      {
+        "signature": "hla_class_ii",
+        "score": -0.006283441172344783,
+        "vs_others": -0.03427911484607584,
+        "description": "MHC class II presentation",
+        "is_resistance_mechanism": false,
+        "direction": "low"
+      },
+      {
+        "signature": "ifn_signaling",
+        "score": 0.008280982355823105,
+        "vs_others": -0.0033656705697244736,
+        "description": "Interferon-gamma signaling",
+        "is_resistance_mechanism": false,
+        "direction": "low"
+      },
+      {
+        "signature": "antigen_presentation",
+        "score": 0.0,
+        "vs_others": 0.0,
+        "description": "MHC class I antigen presentation machinery",
+        "is_resistance_mechanism": false,
+        "direction": "low"
+      },
+      {
+        "signature": "treg_signature",
+        "score": 0.0,
+        "vs_others": 0.0,
+        "description": "Regulatory T-cell markers",
+        "is_resistance_mechanism": false,
+        "direction": "high"
+      }
+    ],
+    "SCLC_I": [
+      {
+        "signature": "ifn_signaling",
+        "score": -0.25131584762733933,
+        "vs_others": -0.36318017098429456,
+        "description": "Interferon-gamma signaling",
+        "is_resistance_mechanism": true,
+        "direction": "low"
+      },
+      {
+        "signature": "hla_class_ii",
+        "score": -0.09574889186522517,
+        "vs_others": -0.1556119081582909,
+        "description": "MHC class II presentation",
+        "is_resistance_mechanism": false,
+        "direction": "low"
+      },
+      {
+        "signature": "t_cell_exhaustion",
+        "score": -0.10953785377642972,
+        "vs_others": -0.1539715723633853,
+        "description": "T-cell exhaustion markers",
+        "is_resistance_mechanism": false,
+        "direction": "high"
+      },
+      {
+        "signature": "antigen_presentation",
+        "score": 0.0,
+        "vs_others": 0.0,
+        "description": "MHC class I antigen presentation machinery",
+        "is_resistance_mechanism": false,
+        "direction": "low"
+      },
+      {
+        "signature": "treg_signature",
+        "score": 0.0,
+        "vs_others": 0.0,
+        "description": "Regulatory T-cell markers",
+        "is_resistance_mechanism": false,
+        "direction": "high"
+      }
+    ]
+  },
+  "therapeutics": {
+    "SCLC_A": [],
+    "SCLC_N": [],
+    "SCLC_P": [],
+    "SCLC_I": [
+      {
+        "mechanism": "ifn_signaling",
+        "description": "Interferon-gamma signaling",
+        "score": -0.25131584762733933,
+        "target": "Restore IFN signaling",
+        "drugs": [
+          "STING agonists (ADU-S100)",
+          "IFN-alpha",
+          "Oncolytic viruses"
+        ],
+        "clinical_trials": [
+          "NCT03172936",
+          "NCT03937895"
+        ]
+      }
+    ]
+  }
+}
