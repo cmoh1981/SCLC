@@ -1,0 +1,13 @@
+Subtype,Molecular_Features,Primary_Drug,Drug_Class,Target,Clinical_Trial_Status,IO_Sensitivity,Rationale
+SCLC-A,"ASCL1-high, DLL3-high",Tarlatamab,DLL3xCD3 bispecific,DLL3,FDA approved (2024),Low,DLL3 surface expression in neuroendocrine SCLC
+SCLC-A,BCL2 overexpression,Venetoclax,BCL2 inhibitor,BCL2,Phase I/II,Low,BCL2 overexpression drives survival
+SCLC-A,MYC amplification,Alisertib,Aurora A inhibitor,AURKA,Phase II,Low,MYC-driven proliferation sensitivity
+SCLC-N,"NEUROD1-high, MYCN-high",Alisertib,Aurora A inhibitor,AURKA/MYCN,Phase II,Low,Aurora A stabilizes MYCN
+SCLC-N,DDR defects,Olaparib,PARP inhibitor,PARP1/2,Phase II,Low,Replication stress and HR defects
+SCLC-N,High mitotic rate,Volasertib,PLK1 inhibitor,PLK1,Phase I,Low,Cell cycle dependency
+SCLC-P,"POU2F3-high, tuft cell",Erdafitinib,FGFR inhibitor,FGFR1,FDA approved (other),Moderate,FGFR1 pathway activation
+SCLC-P,FGFR1 amplification,Linsitinib,IGF1R inhibitor,IGF1R,Phase II,Moderate,IGF1R signaling in non-NE SCLC
+SCLC-P,IGF1R activation,Temozolomide,Alkylating agent,DNA,Phase II,Moderate,Overcomes platinum resistance
+SCLC-I,"Inflamed, T-cell high",Atezolizumab,PD-L1 inhibitor,PD-L1,FDA approved,High,High baseline T-cell infiltration
+SCLC-I,PD-L1 expression,Ipilimumab,CTLA-4 inhibitor,CTLA-4,Phase III,High,Enhance T-cell priming
+SCLC-I,Exhaustion markers,Tiragolumab,TIGIT inhibitor,TIGIT,Phase III,High,Address T-cell exhaustion

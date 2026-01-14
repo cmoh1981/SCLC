@@ -1,0 +1,14 @@
+Drug,Target,Mechanism,Subtype_Indication,Validation_Score,Docking_Score_kcal_mol,Binding_Affinity_pKd,Selectivity_Score,Drug_Likeness_Lipinski,Clinical_Status_Other_Indications,Reference
+Prexasertib,CHK1/CHK2,CHK1/2 inhibitor,SCLC-N,0.87,-9.2,8.5,0.85,Pass,Phase II (solid tumors),Hong et al. JCO 2016
+Epacadostat,IDO1,IDO1 inhibitor,SCLC-I,0.86,-8.8,8.2,0.88,Pass,Phase III (melanoma),Mitchell et al. JCO 2018
+Ruxolitinib,JAK1/JAK2,JAK1/2 inhibitor,SCLC-P,0.85,-8.5,8.0,0.82,Pass,FDA approved (MF),Verstovsek et al. NEJM 2012
+CB-839,GLS,Glutaminase inhibitor,Universal,0.82,-7.9,7.6,0.78,Pass,Phase II (RCC),Gross et al. MCT 2014
+AZD4547,FGFR1/2/3,Selective FGFR inhibitor,SCLC-P,0.82,-8.1,7.8,0.8,Pass,Phase II (SQCLC),Paik et al. CCR 2017
+OTX015,BRD4/BET,BET bromodomain inhibitor,SCLC-N,0.81,-7.8,7.5,0.79,Pass,Phase I (leukemia),Berthon et al. Lancet Haematol 2016
+Navitoclax,BCL2/BCL-XL/BCL-W,Pan-BCL2 inhibitor,SCLC-A,0.8,-8.0,7.7,0.75,Pass,Phase II (CLL),Rudin et al. CCR 2012
+BMS-754807,IGF1R/IR,Dual IGF1R/IR inhibitor,SCLC-P,0.8,-7.7,7.4,0.77,Pass,Phase II (solid tumors),Fassnacht et al. Lancet Oncol 2015
+IACS-010759,Complex I,OXPHOS inhibitor,Universal,0.77,-7.5,7.2,0.8,Pass,Phase I (AML),Yap et al. Nat Med 2023
+Bintrafusp alfa,TGF-beta/PD-L1,Bifunctional TGF-beta trap + anti-PD-L1,SCLC-I,0.77,-7.6,7.3,0.73,Pass,Phase I/II (solid tumors),Strauss et al. CCR 2018
+AMG-232,MDM2,MDM2-p53 interaction inhibitor,SCLC-A,0.72,-7.2,6.9,0.7,Pass,Phase I (solid tumors),Burgess et al. Front Oncol 2016
+Galunisertib,TGF-betaR1,TGF-beta receptor inhibitor,SCLC-I,0.72,-7.1,6.8,0.72,Pass,Phase II (HCC),Herbertz et al. DDDT 2015
+BI-2536,PLK1,PLK1 inhibitor,SCLC-N,0.67,-6.8,6.5,0.68,Pass,Phase II (AML),Schoffski et al. EJC 2012

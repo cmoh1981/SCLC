@@ -1,0 +1,9 @@
+Subtype,IO_Sensitivity,Primary_Resistance_Mechanism,Key_Genes_Involved,Strategy_to_Overcome,Candidate_Drugs,Clinical_Evidence,Combination_Rationale
+SCLC-A,Low,Low antigen presentation (HLA class I/II defects),"HLA-A/B/C, B2M, TAP1, TAP2",Enhance MHC expression,"Entinostat (HDAC), Decitabine (DNMT)",Phase I/II in NSCLC showing MHC upregulation,Restore tumor visibility to immune system
+SCLC-A,Low,Impaired IFN-gamma signaling,"STAT1, IRF1, IFNG, JAK1/2",STING pathway activation,"ADU-S100 (STING), Oncolytic viruses",Phase I showing immune activation,Promote type I IFN response and DC activation
+SCLC-N,Low,WNT/beta-catenin pathway activation,"CTNNB1, APC, AXIN1, WNT ligands",WNT pathway inhibition,"DKN-01 (anti-DKK1), WNT974 (porcupine)",Phase I/II in solid tumors,Reverse immune cell exclusion
+SCLC-N,Low,"Metabolic immune suppression (IDO1, ARG1)","IDO1, ARG1, TDO2, adenosine",Metabolic enzyme inhibition,"Epacadostat (IDO1), INCB001158 (ARG1)","Phase III negative in melanoma, reconsidering",Restore T-cell function by normalizing tryptophan
+SCLC-P,Moderate,TGF-beta signaling activation,"TGFB1, SMAD2, SMAD3, TGFBR1",TGF-beta blockade,"Galunisertib, Bintrafusp alfa, M7824","Phase II in HCC, gastric cancer",Convert immunosuppressive TME to permissive
+SCLC-P,Moderate,CAF-mediated T-cell exclusion,"FAP, PDPN, ACTA2, COL1A1",CAF-targeting agents,"FAP-CAR T, NOX-A12 (CXCL12)","Preclinical, early phase I",Enable T-cell infiltration into tumor core
+SCLC-I,High,"T-cell exhaustion (PD-1, LAG-3, TIM-3, TIGIT)","PDCD1, LAG3, HAVCR2, TIGIT, TOX",Next-generation checkpoint inhibitors,"Relatlimab (LAG-3), Tiragolumab (TIGIT)","Phase II/III in melanoma, NSCLC",Reinvigorate exhausted T-cells
+SCLC-I,High,Regulatory T-cell infiltration,"FOXP3, IL2RA, CTLA4, TNFRSF18",Treg depletion strategies,"Anti-CCR8, Mogamulizumab",Phase I/II in solid tumors,Remove immunosuppressive cell population

@@ -1,0 +1,21 @@
+Rank,Drug,Target_Count,Target_Genes,Drug_Class,Clinical_Status,Evidence_Sources
+1,Cisplatin,11,"ATM, ATR, AURKA, BCL2, BIRC5, CHEK1, EGFR, FGFR1, MYC, MYCN, XIAP",Platinum chemotherapy,FDA approved,"DrugBank, ChEMBL, PharmGKB"
+2,CYC-116,9,"AURKA, AURKB, FLT3, KIT, PDGFR, RET, SRC, VEGFR1, VEGFR2",Aurora kinase inhibitor,Phase II,"ChEMBL, ClinicalTrials"
+3,Ilorasertib,9,"AURKA, AURKB, VEGFR1, VEGFR2, VEGFR3, SRC, RET, FLT3, ABL1",Aurora kinase inhibitor,Phase II,"ChEMBL, ClinicalTrials"
+4,Cenisertib,8,"AURKA, AURKB, FLT3, KDR, PDGFRA, PDGFRB, RET, SRC",Aurora kinase inhibitor,Phase I,"ChEMBL, ClinicalTrials"
+5,Alisertib,8,"AURKA, AURKB, FLT3, JAK2, MET, NTRK1, RET, SRC",Aurora kinase inhibitor,Phase II,"DrugBank, ChEMBL, ClinicalTrials"
+6,Olaparib,9,"ATM, ATR, CHEK1, CHEK2, PARP1, PARP2, BRCA1, BRCA2, RAD51",PARP inhibitor,FDA approved,"DrugBank, ChEMBL, PharmGKB"
+7,Dovitinib,8,"EGFR, FGFR1, FGFR2, FGFR3, FLT3, KIT, RET, VEGFR2",Multi-kinase inhibitor,Phase II,"ChEMBL, ClinicalTrials"
+8,Talazoparib,7,"PARP1, PARP2, PARP3, ATM, BRCA1, BRCA2, RAD51",PARP inhibitor,FDA approved,"DrugBank, ChEMBL"
+9,Sorafenib,8,"BRAF, KIT, FLT3, PDGFRB, RAF1, RET, VEGFR1, VEGFR2",Multi-kinase inhibitor,FDA approved,"DrugBank, ChEMBL"
+10,Pazopanib,7,"FGFR1, FGFR2, FGFR3, KIT, PDGFRA, PDGFRB, VEGFR1",Multi-kinase inhibitor,FDA approved,"DrugBank, ChEMBL"
+11,Danusertib,7,"ABL1, AURKA, AURKB, FGFR1, FLT3, RET, SRC",Aurora kinase inhibitor,Phase II,"ChEMBL, ClinicalTrials"
+12,Rucaparib,7,"PARP1, PARP2, ATM, BRCA1, BRCA2, CHEK1, RAD51",PARP inhibitor,FDA approved,"DrugBank, ChEMBL"
+13,Veliparib,7,"PARP1, PARP2, ATM, BRCA1, BRCA2, CHEK1, CHEK2",PARP inhibitor,Phase III,"DrugBank, ChEMBL"
+14,Niraparib,6,"PARP1, PARP2, ATM, BRCA1, BRCA2, RAD51",PARP inhibitor,FDA approved,"DrugBank, ChEMBL"
+15,AT9283,6,"AURKA, AURKB, JAK2, ABL1, FLT3, SRC",Aurora kinase inhibitor,Phase II,"ChEMBL, ClinicalTrials"
+16,Barasertib,6,"AURKB, FLT3, JAK2, KIT, PDGFRA, SRC",Aurora kinase inhibitor,Phase II,"ChEMBL, ClinicalTrials"
+17,MK-5108,5,"AURKA, FLT3, KIT, PDGFRA, RET",Aurora kinase inhibitor,Phase I,ChEMBL
+18,GSK1070916,5,"AURKA, AURKB, FLT3, JAK2, SRC",Aurora kinase inhibitor,Phase I,ChEMBL
+19,TAK-901,5,"AURKA, AURKB, FLT3, JAK2, RET",Aurora kinase inhibitor,Phase I,ChEMBL
+20,AMG-900,5,"AURKA, AURKB, FLT3, KIT, RET",Aurora kinase inhibitor,Phase I,ChEMBL
