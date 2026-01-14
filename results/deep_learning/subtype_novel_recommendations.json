@@ -1,0 +1,406 @@
+{
+  "SCLC_A": {
+    "top_drugs": [
+      {
+        "drug": "Navitoclax",
+        "targets": "BCL2,BCLXL,BCLW",
+        "subtype": "SCLC_A",
+        "mechanism": "Pan-BCL2 family inhibitor",
+        "predicted_efficacy": 0.6,
+        "admet_score": 0.6,
+        "novelty_score": 0.8,
+        "docking_score": -10.220675057362614,
+        "binding_affinity": 7.775816648664875,
+        "selectivity": 0.9352571194073533,
+        "drug_likeness": 0.6,
+        "validation_score": 0.7958427997754822,
+        "pass": true
+      },
+      {
+        "drug": "AMG-232",
+        "targets": "MDM2,TP53",
+        "subtype": "SCLC_A",
+        "mechanism": "MDM2-p53 inhibitor, reactivates p53",
+        "predicted_efficacy": 0.6,
+        "admet_score": 1.0,
+        "novelty_score": 0.8,
+        "docking_score": -7.935570211090661,
+        "binding_affinity": 6.026047916614142,
+        "selectivity": 0.6833331310286312,
+        "drug_likeness": 1.0,
+        "validation_score": 0.7158373189814171,
+        "pass": true
+      }
+    ],
+    "top_targets": [
+      {
+        "gene": "GENE_2983",
+        "subtype": "SCLC_A",
+        "attention_score": 0.0509856715798378,
+        "vae_importance": 0.0,
+        "druggability": 0.8958444212585619,
+        "novelty": 1.0,
+        "composite_score": 0.29956315288364754,
+        "valid": false,
+        "p_value": 0.6095174524227254,
+        "f_statistic": 0.611397698574127,
+        "effect_size": 0.021878818510581807,
+        "mean_expression": 2.9705990102765387,
+        "std_expression": 1.89296966903996
+      },
+      {
+        "gene": "GENE_2972",
+        "subtype": "SCLC_A",
+        "attention_score": 0.05816460773348808,
+        "vae_importance": 0.0,
+        "druggability": 0.8596506540565371,
+        "novelty": 1.0,
+        "composite_score": 0.29519597390470265,
+        "valid": false,
+        "p_value": 0.9628705374739919,
+        "f_statistic": 0.0945075966108762,
+        "effect_size": 0.0034456812277811424,
+        "mean_expression": 3.224136523903246,
+        "std_expression": 1.801589727022411
+      },
+      {
+        "gene": "GENE_3187",
+        "subtype": "SCLC_A",
+        "attention_score": 0.06010902673006058,
+        "vae_importance": 0.0,
+        "druggability": 0.8487072326455531,
+        "novelty": 1.0,
+        "composite_score": 0.2937850572211349,
+        "valid": false,
+        "p_value": 0.731221433690664,
+        "f_statistic": 0.431176765092559,
+        "effect_size": 0.015529781132965308,
+        "mean_expression": 3.5551353837068675,
+        "std_expression": 1.9540119257490902
+      }
+    ]
+  },
+  "SCLC_N": {
+    "top_drugs": [
+      {
+        "drug": "Prexasertib",
+        "targets": "CHEK1,CHEK2",
+        "subtype": "SCLC_N",
+        "mechanism": "CHK1/2 inhibitor, replication stress",
+        "predicted_efficacy": 0.6,
+        "admet_score": 1.0,
+        "novelty_score": 0.8,
+        "docking_score": -9.911055726140075,
+        "binding_affinity": 9.813631582249423,
+        "selectivity": 0.6142613270233622,
+        "drug_likeness": 1.0,
+        "validation_score": 0.8650376060256568,
+        "pass": true
+      },
+      {
+        "drug": "OTX015",
+        "targets": "BRD2,BRD3,BRD4,MYCN",
+        "subtype": "SCLC_N",
+        "mechanism": "BET inhibitor, downregulates MYCN",
+        "predicted_efficacy": 0.6,
+        "admet_score": 1.0,
+        "novelty_score": 0.8,
+        "docking_score": -9.453545905151467,
+        "binding_affinity": 8.222591756055358,
+        "selectivity": 0.6345831039219114,
+        "drug_likeness": 1.0,
+        "validation_score": 0.8099330210948297,
+        "pass": true
+      },
+      {
+        "drug": "BI-2536",
+        "targets": "PLK1,PLK2,PLK3",
+        "subtype": "SCLC_N",
+        "mechanism": "PLK1 inhibitor, mitotic arrest",
+        "predicted_efficacy": 0.6,
+        "admet_score": 0.8,
+        "novelty_score": 0.8,
+        "docking_score": -6.938628559419619,
+        "binding_affinity": 6.023416389213196,
+        "selectivity": 0.7794029085540639,
+        "drug_likeness": 0.8,
+        "validation_score": 0.6700487873726991,
+        "pass": true
+      }
+    ],
+    "top_targets": [
+      {
+        "gene": "GENE_3906",
+        "subtype": "SCLC_N",
+        "attention_score": 0.04165066033601761,
+        "vae_importance": 0.0,
+        "druggability": 0.8786732608460013,
+        "novelty": 1.0,
+        "composite_score": 0.2923949163036073,
+        "valid": false,
+        "p_value": 0.13507642437316122,
+        "f_statistic": 1.9058246523015074,
+        "effect_size": 0.06518055866170419,
+        "mean_expression": 2.777823192583525,
+        "std_expression": 1.676466049089902
+      },
+      {
+        "gene": "GENE_3904",
+        "subtype": "SCLC_N",
+        "attention_score": 0.0453968420624733,
+        "vae_importance": 0.0,
+        "druggability": 0.8205051151836984,
+        "novelty": 1.0,
+        "composite_score": 0.282259759861729,
+        "valid": false,
+        "p_value": 0.8021341636241723,
+        "f_statistic": 0.33211884498544153,
+        "effect_size": 0.01200482257961145,
+        "mean_expression": 3.1613837221802217,
+        "std_expression": 1.6961020628776755
+      },
+      {
+        "gene": "GENE_4521",
+        "subtype": "SCLC_N",
+        "attention_score": 0.0413745753467083,
+        "vae_importance": 0.0,
+        "druggability": 0.8281279768951172,
+        "novelty": 1.0,
+        "composite_score": 0.2821754255177068,
+        "valid": false,
+        "p_value": 0.08038800105527544,
+        "f_statistic": 2.329759300685851,
+        "effect_size": 0.07854067441416941,
+        "mean_expression": 3.5855021215134935,
+        "std_expression": 2.044756806953518
+      }
+    ]
+  },
+  "SCLC_P": {
+    "top_drugs": [
+      {
+        "drug": "Ruxolitinib",
+        "targets": "JAK1,JAK2",
+        "subtype": "SCLC_P",
+        "mechanism": "JAK1/2 inhibitor, blocks cytokine signaling",
+        "predicted_efficacy": 0.6,
+        "admet_score": 1.0,
+        "novelty_score": 0.8,
+        "docking_score": -11.510782055086395,
+        "binding_affinity": 7.21129676311579,
+        "selectivity": 0.7451258929119785,
+        "drug_likeness": 1.0,
+        "validation_score": 0.8531336328530292,
+        "pass": true
+      },
+      {
+        "drug": "AZD4547",
+        "targets": "FGFR1,FGFR2,FGFR3",
+        "subtype": "SCLC_P",
+        "mechanism": "Selective FGFR inhibitor",
+        "predicted_efficacy": 0.6,
+        "admet_score": 1.0,
+        "novelty_score": 0.8,
+        "docking_score": -8.008400122243183,
+        "binding_affinity": 9.749892507918766,
+        "selectivity": 0.6159489723598377,
+        "drug_likeness": 1.0,
+        "validation_score": 0.81589657276561,
+        "pass": true
+      },
+      {
+        "drug": "BMS-754807",
+        "targets": "IGF1R,INSR",
+        "subtype": "SCLC_P",
+        "mechanism": "IGF1R/IR inhibitor",
+        "predicted_efficacy": 0.6,
+        "admet_score": 1.0,
+        "novelty_score": 0.8,
+        "docking_score": -7.072389087518062,
+        "binding_affinity": 9.899216424489584,
+        "selectivity": 0.6191761190055393,
+        "drug_likeness": 1.0,
+        "validation_score": 0.797621443723747,
+        "pass": true
+      }
+    ],
+    "top_targets": [
+      {
+        "gene": "GENE_4906",
+        "subtype": "SCLC_P",
+        "attention_score": 0.02799094282090664,
+        "vae_importance": 0.0,
+        "druggability": 0.8849497605464347,
+        "novelty": 1.0,
+        "composite_score": 0.28818632923764964,
+        "valid": false,
+        "p_value": 0.48531906521931967,
+        "f_statistic": 0.8222101999792104,
+        "effect_size": 0.0292024268331529,
+        "mean_expression": 3.2072156895701633,
+        "std_expression": 1.694764002732848
+      },
+      {
+        "gene": "GENE_3769",
+        "subtype": "SCLC_P",
+        "attention_score": 0.016151022166013718,
+        "vae_importance": 0.0,
+        "druggability": 0.8774454110589445,
+        "novelty": 1.0,
+        "composite_score": 0.2819494910781944,
+        "valid": false,
+        "p_value": 0.7412637639460842,
+        "f_statistic": 0.4169940125795705,
+        "effect_size": 0.015026634006210588,
+        "mean_expression": 3.3090057664296135,
+        "std_expression": 1.9717493541201208
+      },
+      {
+        "gene": "GENE_4550",
+        "subtype": "SCLC_P",
+        "attention_score": 0.0052302442491054535,
+        "vae_importance": 0.0,
+        "druggability": 0.8931514539210599,
+        "novelty": 1.0,
+        "composite_score": 0.2807223884838542,
+        "valid": false,
+        "p_value": 0.21473716438690474,
+        "f_statistic": 1.522864729118135,
+        "effect_size": 0.05277426796913105,
+        "mean_expression": 3.2289821268567804,
+        "std_expression": 1.5917783971448531
+      }
+    ]
+  },
+  "SCLC_I": {
+    "top_drugs": [
+      {
+        "drug": "Epacadostat",
+        "targets": "IDO1",
+        "subtype": "SCLC_I",
+        "mechanism": "IDO1 inhibitor, restores T-cell function",
+        "predicted_efficacy": 0.6,
+        "admet_score": 0.8,
+        "novelty_score": 0.8,
+        "docking_score": -11.16771293534251,
+        "binding_affinity": 7.8282758859921575,
+        "selectivity": 0.919855064673551,
+        "drug_likeness": 0.8,
+        "validation_score": 0.8580121128980377,
+        "pass": true
+      },
+      {
+        "drug": "Bintrafusp alfa",
+        "targets": "TGFB1,TGFB2,TGFB3,CD274",
+        "subtype": "SCLC_I",
+        "mechanism": "Bifunctional TGF-\u03b2 trap + anti-PD-L1",
+        "predicted_efficacy": 0.6,
+        "admet_score": 0.7,
+        "novelty_score": 0.8,
+        "docking_score": -10.41450606973411,
+        "binding_affinity": 7.625372587216123,
+        "selectivity": 0.7033967413038879,
+        "drug_likeness": 0.7,
+        "validation_score": 0.769803177620614,
+        "pass": true
+      },
+      {
+        "drug": "Galunisertib",
+        "targets": "TGFBR1",
+        "subtype": "SCLC_I",
+        "mechanism": "TGF-beta receptor inhibitor, enhances immunity",
+        "predicted_efficacy": 0.6,
+        "admet_score": 1.0,
+        "novelty_score": 0.8,
+        "docking_score": -6.026577141948872,
+        "binding_affinity": 8.010158020518464,
+        "selectivity": 0.6399095410012164,
+        "drug_likeness": 1.0,
+        "validation_score": 0.7189510773645189,
+        "pass": true
+      }
+    ],
+    "top_targets": [
+      {
+        "gene": "GENE_2395",
+        "subtype": "SCLC_I",
+        "attention_score": 0.029722802340984344,
+        "vae_importance": 0.0,
+        "druggability": 0.8755202374624462,
+        "novelty": 1.0,
+        "composite_score": 0.286993168428883,
+        "valid": false,
+        "p_value": 0.5480215552625927,
+        "f_statistic": 0.7112738501593481,
+        "effect_size": 0.025362232585593544,
+        "mean_expression": 3.139683468701726,
+        "std_expression": 1.510259863631839
+      },
+      {
+        "gene": "GENE_59",
+        "subtype": "SCLC_I",
+        "attention_score": 0.007481623440980911,
+        "vae_importance": 0.04705597460269928,
+        "druggability": 0.837492572052639,
+        "novelty": 1.0,
+        "composite_score": 0.28460795616772994,
+        "valid": false,
+        "p_value": 0.6116581080581078,
+        "f_statistic": 0.6080507078220803,
+        "effect_size": 0.02176165314239514,
+        "mean_expression": 3.0384442495439834,
+        "std_expression": 1.93569752511017
+      },
+      {
+        "gene": "GENE_816",
+        "subtype": "SCLC_I",
+        "attention_score": 0.007655005436390638,
+        "vae_importance": 0.0,
+        "druggability": 0.8953687336588754,
+        "novelty": 1.0,
+        "composite_score": 0.28213574890633136,
+        "valid": false,
+        "p_value": 0.7060459343510387,
+        "f_statistic": 0.4670800019908213,
+        "effect_size": 0.016801189117477362,
+        "mean_expression": 3.153760236257865,
+        "std_expression": 1.73675293036568
+      }
+    ]
+  },
+  "Universal": {
+    "top_drugs": [
+      {
+        "drug": "CB-839",
+        "targets": "GLS1,GLS2",
+        "subtype": "Universal",
+        "mechanism": "Glutaminase inhibitor, metabolic targeting",
+        "predicted_efficacy": 0.6,
+        "admet_score": 0.8,
+        "novelty_score": 0.8,
+        "docking_score": -9.411812020221594,
+        "binding_affinity": 7.646509891212639,
+        "selectivity": 0.9776594142737298,
+        "drug_likeness": 0.8,
+        "validation_score": 0.820222480096665,
+        "pass": true
+      },
+      {
+        "drug": "IACS-010759",
+        "targets": "MT-ND1,NDUFA",
+        "subtype": "Universal",
+        "mechanism": "Complex I inhibitor, OXPHOS targeting",
+        "predicted_efficacy": 0.6,
+        "admet_score": 1.0,
+        "novelty_score": 0.8,
+        "docking_score": -8.26713695104868,
+        "binding_affinity": 6.995407550987821,
+        "selectivity": 0.780047422701915,
+        "drug_likeness": 1.0,
+        "validation_score": 0.7725501348462347,
+        "pass": true
+      }
+    ],
+    "top_targets": []
+  }
+}
