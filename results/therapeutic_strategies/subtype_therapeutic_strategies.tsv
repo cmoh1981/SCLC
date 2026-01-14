@@ -1,0 +1,30 @@
+Subtype	Drug	Mechanism	Development Status	Source	Rationale
+SCLC-A (ASCL1-high)	Rovalpituzumab tesirine	DLL3-targeting ADC	Phase III completed	Literature-curated	Classical neuroendocrine, high DLL3, MYC-driven proliferation
+SCLC-A (ASCL1-high)	Alisertib	Aurora A inhibitor	Phase II	Literature-curated	Classical neuroendocrine, high DLL3, MYC-driven proliferation
+SCLC-A (ASCL1-high)	Venetoclax	BCL2 inhibitor	Phase I/II	Literature-curated	Classical neuroendocrine, high DLL3, MYC-driven proliferation
+SCLC-A (ASCL1-high)	Lurbinectedin	Transcription inhibitor	FDA approved	Literature-curated	Classical neuroendocrine, high DLL3, MYC-driven proliferation
+SCLC-A (ASCL1-high)	Tarlatamab	DLL3xCD3 bispecific	FDA approved 2024	Literature-curated	Classical neuroendocrine, high DLL3, MYC-driven proliferation
+SCLC-A (ASCL1-high)	CISPLATIN	Targets: MYC, AURKA, BCL2	DGIdb match	Computational	Targets 3 subtype-specific genes
+SCLC-A (ASCL1-high)	ALISERTIB	Targets: MYC, AURKA	DGIdb match	Computational	Targets 2 subtype-specific genes
+SCLC-A (ASCL1-high)	PACLITAXEL	Targets: AURKA, BCL2	DGIdb match	Computational	Targets 2 subtype-specific genes
+SCLC-N (NEUROD1-high)	Alisertib	Aurora A inhibitor	Stabilizes MYCN	Literature-curated	Neuroendocrine variant, MYCN amplification, neural differentiation
+SCLC-N (NEUROD1-high)	Olaparib	PARP inhibitor	DDR defects	Literature-curated	Neuroendocrine variant, MYCN amplification, neural differentiation
+SCLC-N (NEUROD1-high)	Volasertib	PLK1 inhibitor	Phase II	Literature-curated	Neuroendocrine variant, MYCN amplification, neural differentiation
+SCLC-N (NEUROD1-high)	JQ1/OTX015	BET inhibitor	Preclinical	Literature-curated	Neuroendocrine variant, MYCN amplification, neural differentiation
+SCLC-N (NEUROD1-high)	Linsitinib	IGF1R inhibitor	Preclinical	Literature-curated	Neuroendocrine variant, MYCN amplification, neural differentiation
+SCLC-N (NEUROD1-high)	CISPLATIN	Targets: MYCN, MYC, AURKA	DGIdb match	Computational	Targets 3 subtype-specific genes
+SCLC-N (NEUROD1-high)	ILORASERTIB	Targets: IGF1R, AURKB, AURKA	DGIdb match	Computational	Targets 3 subtype-specific genes
+SCLC-N (NEUROD1-high)	CENISERTIB	Targets: IGF1R, AURKB, AURKA	DGIdb match	Computational	Targets 3 subtype-specific genes
+SCLC-P (POU2F3-high)	Erdafitinib	FGFR inhibitor	FDA approved other	Literature-curated	Tuft cell-like, non-neuroendocrine, chemoresistant
+SCLC-P (POU2F3-high)	Linsitinib	IGF1R inhibitor	Phase II	Literature-curated	Tuft cell-like, non-neuroendocrine, chemoresistant
+SCLC-P (POU2F3-high)	Nirogacestat	Gamma-secretase inhibitor	Notch pathway	Literature-curated	Tuft cell-like, non-neuroendocrine, chemoresistant
+SCLC-P (POU2F3-high)	Trilaciclib	CDK4/6 inhibitor	Myeloprotection	Literature-curated	Tuft cell-like, non-neuroendocrine, chemoresistant
+SCLC-P (POU2F3-high)	Temozolomide	Alkylating agent	Alternative chemo	Literature-curated	Tuft cell-like, non-neuroendocrine, chemoresistant
+SCLC-P (POU2F3-high)	ILORASERTIB	Targets: FGFR1, IGF1R	DGIdb match	Computational	Targets 2 subtype-specific genes
+SCLC-P (POU2F3-high)	CENISERTIB	Targets: FGFR1, IGF1R	DGIdb match	Computational	Targets 2 subtype-specific genes
+SCLC-P (POU2F3-high)	GW441756X	Targets: FGFR1, IGF1R	DGIdb match	Computational	Targets 2 subtype-specific genes
+SCLC-I (Inflamed)	Atezolizumab	PD-L1 inhibitor	FDA approved SCLC	Literature-curated	Low neuroendocrine, high immune infiltration, T-cell inflamed
+SCLC-I (Inflamed)	Durvalumab	PD-L1 inhibitor	FDA approved SCLC	Literature-curated	Low neuroendocrine, high immune infiltration, T-cell inflamed
+SCLC-I (Inflamed)	Ipilimumab	CTLA-4 inhibitor	Combination	Literature-curated	Low neuroendocrine, high immune infiltration, T-cell inflamed
+SCLC-I (Inflamed)	Tiragolumab	TIGIT inhibitor	Phase III	Literature-curated	Low neuroendocrine, high immune infiltration, T-cell inflamed
+SCLC-I (Inflamed)	Relatlimab	LAG-3 inhibitor	Phase II	Literature-curated	Low neuroendocrine, high immune infiltration, T-cell inflamed

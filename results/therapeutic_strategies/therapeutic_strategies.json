@@ -1,0 +1,679 @@
+{
+  "subtype_biology": {
+    "SCLC_A": {
+      "name": "SCLC-A (ASCL1-high)",
+      "biology": "Classical neuroendocrine, high DLL3, MYC-driven proliferation",
+      "key_genes": [
+        "ASCL1",
+        "DLL3",
+        "MYC",
+        "AURKA",
+        "BCL2",
+        "NOTCH1",
+        "SOX2"
+      ],
+      "vulnerabilities": [
+        "DLL3 surface expression \u2192 Rovalpituzumab tesirine (Rova-T)",
+        "BCL2 overexpression \u2192 BCL2 inhibitors (venetoclax)",
+        "Aurora kinase dependency \u2192 AURKA inhibitors (alisertib)",
+        "Notch pathway inactive \u2192 DLL3-targeting ADCs",
+        "High proliferation \u2192 Topoisomerase inhibitors (lurbinectedin)"
+      ],
+      "recommended_drugs": [
+        [
+          "Rovalpituzumab tesirine",
+          "DLL3-targeting ADC",
+          "Phase III completed"
+        ],
+        [
+          "Alisertib",
+          "Aurora A inhibitor",
+          "Phase II"
+        ],
+        [
+          "Venetoclax",
+          "BCL2 inhibitor",
+          "Phase I/II"
+        ],
+        [
+          "Lurbinectedin",
+          "Transcription inhibitor",
+          "FDA approved"
+        ],
+        [
+          "Tarlatamab",
+          "DLL3xCD3 bispecific",
+          "FDA approved 2024"
+        ]
+      ],
+      "metabolic_targets": [
+        "OXPHOS",
+        "Glutaminolysis"
+      ],
+      "io_sensitivity": "Low - poor immune infiltration"
+    },
+    "SCLC_N": {
+      "name": "SCLC-N (NEUROD1-high)",
+      "biology": "Neuroendocrine variant, MYCN amplification, neural differentiation",
+      "key_genes": [
+        "NEUROD1",
+        "MYCN",
+        "AURKA",
+        "AURKB",
+        "MYC",
+        "IGF1R",
+        "SOX2"
+      ],
+      "vulnerabilities": [
+        "MYCN amplification \u2192 Aurora kinase inhibitors",
+        "MYC/MYCN dependency \u2192 BET inhibitors (JQ1)",
+        "IGF1R signaling \u2192 IGF1R inhibitors",
+        "High mitotic rate \u2192 PLK1 inhibitors",
+        "DNA damage response defects \u2192 PARP inhibitors"
+      ],
+      "recommended_drugs": [
+        [
+          "Alisertib",
+          "Aurora A inhibitor",
+          "Stabilizes MYCN"
+        ],
+        [
+          "Olaparib",
+          "PARP inhibitor",
+          "DDR defects"
+        ],
+        [
+          "Volasertib",
+          "PLK1 inhibitor",
+          "Phase II"
+        ],
+        [
+          "JQ1/OTX015",
+          "BET inhibitor",
+          "Preclinical"
+        ],
+        [
+          "Linsitinib",
+          "IGF1R inhibitor",
+          "Preclinical"
+        ]
+      ],
+      "metabolic_targets": [
+        "OXPHOS",
+        "Lipid synthesis"
+      ],
+      "io_sensitivity": "Low - neuroendocrine phenotype"
+    },
+    "SCLC_P": {
+      "name": "SCLC-P (POU2F3-high)",
+      "biology": "Tuft cell-like, non-neuroendocrine, chemoresistant",
+      "key_genes": [
+        "POU2F3",
+        "SOX9",
+        "TRPM5",
+        "IGF1R",
+        "FGFR1",
+        "NOTCH1",
+        "REST"
+      ],
+      "vulnerabilities": [
+        "IGF1R overexpression \u2192 IGF1R inhibitors",
+        "FGFR1 amplification \u2192 FGFR inhibitors (erdafitinib)",
+        "Notch pathway active \u2192 Notch inhibitors",
+        "Chemoresistant \u2192 Alternative mechanisms needed",
+        "Unique tuft cell biology \u2192 Novel targets"
+      ],
+      "recommended_drugs": [
+        [
+          "Erdafitinib",
+          "FGFR inhibitor",
+          "FDA approved other"
+        ],
+        [
+          "Linsitinib",
+          "IGF1R inhibitor",
+          "Phase II"
+        ],
+        [
+          "Nirogacestat",
+          "Gamma-secretase inhibitor",
+          "Notch pathway"
+        ],
+        [
+          "Trilaciclib",
+          "CDK4/6 inhibitor",
+          "Myeloprotection"
+        ],
+        [
+          "Temozolomide",
+          "Alkylating agent",
+          "Alternative chemo"
+        ]
+      ],
+      "metabolic_targets": [
+        "Glycolysis",
+        "One-carbon metabolism"
+      ],
+      "io_sensitivity": "Moderate - variable immune infiltration"
+    },
+    "SCLC_I": {
+      "name": "SCLC-I (Inflamed)",
+      "biology": "Low neuroendocrine, high immune infiltration, T-cell inflamed",
+      "key_genes": [
+        "CD274",
+        "PDCD1LG2",
+        "IDO1",
+        "STAT1",
+        "IRF1",
+        "HLA-A",
+        "CXCL10"
+      ],
+      "vulnerabilities": [
+        "High PD-L1/PD-L2 \u2192 Immune checkpoint inhibitors",
+        "T-cell infiltration \u2192 Enhance with anti-CTLA4",
+        "IFN-\u03b3 signature \u2192 Biomarker for IO response",
+        "Antigen presentation intact \u2192 Tumor vaccines",
+        "LAG3/TIGIT expression \u2192 Next-gen checkpoints"
+      ],
+      "recommended_drugs": [
+        [
+          "Atezolizumab",
+          "PD-L1 inhibitor",
+          "FDA approved SCLC"
+        ],
+        [
+          "Durvalumab",
+          "PD-L1 inhibitor",
+          "FDA approved SCLC"
+        ],
+        [
+          "Ipilimumab",
+          "CTLA-4 inhibitor",
+          "Combination"
+        ],
+        [
+          "Tiragolumab",
+          "TIGIT inhibitor",
+          "Phase III"
+        ],
+        [
+          "Relatlimab",
+          "LAG-3 inhibitor",
+          "Phase II"
+        ]
+      ],
+      "metabolic_targets": [
+        "IDO1",
+        "Tryptophan metabolism"
+      ],
+      "io_sensitivity": "High - best IO responders"
+    }
+  },
+  "drug_mappings": {
+    "SCLC_A": [
+      {
+        "drug": "CISPLATIN",
+        "targets": [
+          "MYC",
+          "AURKA",
+          "BCL2"
+        ],
+        "n_targets": 3,
+        "score": 2.4849066497880004
+      },
+      {
+        "drug": "ALISERTIB",
+        "targets": [
+          "MYC",
+          "AURKA"
+        ],
+        "n_targets": 2,
+        "score": 2.19722457733622
+      },
+      {
+        "drug": "PACLITAXEL",
+        "targets": [
+          "AURKA",
+          "BCL2"
+        ],
+        "n_targets": 2,
+        "score": 2.079441541679836
+      },
+      {
+        "drug": "CYC-116",
+        "targets": [
+          "AURKA"
+        ],
+        "n_targets": 1,
+        "score": 2.302585092994046
+      },
+      {
+        "drug": "ILORASERTIB",
+        "targets": [
+          "AURKA"
+        ],
+        "n_targets": 1,
+        "score": 2.302585092994046
+      },
+      {
+        "drug": "CENISERTIB",
+        "targets": [
+          "AURKA"
+        ],
+        "n_targets": 1,
+        "score": 2.302585092994046
+      },
+      {
+        "drug": "RG-1530",
+        "targets": [
+          "AURKA"
+        ],
+        "n_targets": 1,
+        "score": 2.302585092994046
+      },
+      {
+        "drug": "OLAPARIB",
+        "targets": [
+          "MYC"
+        ],
+        "n_targets": 1,
+        "score": 2.302585092994046
+      },
+      {
+        "drug": "NVP-TAE684",
+        "targets": [
+          "AURKA"
+        ],
+        "n_targets": 1,
+        "score": 2.19722457733622
+      },
+      {
+        "drug": "GW441756X",
+        "targets": [
+          "AURKA"
+        ],
+        "n_targets": 1,
+        "score": 2.079441541679836
+      },
+      {
+        "drug": "ENTRECTINIB",
+        "targets": [
+          "AURKA"
+        ],
+        "n_targets": 1,
+        "score": 2.079441541679836
+      },
+      {
+        "drug": "IMATINIB",
+        "targets": [
+          "MYC"
+        ],
+        "n_targets": 1,
+        "score": 2.079441541679836
+      },
+      {
+        "drug": "SORAFENIB",
+        "targets": [
+          "AURKA"
+        ],
+        "n_targets": 1,
+        "score": 2.079441541679836
+      },
+      {
+        "drug": "PF-562271",
+        "targets": [
+          "AURKA"
+        ],
+        "n_targets": 1,
+        "score": 2.079441541679836
+      },
+      {
+        "drug": "PAZOPANIB",
+        "targets": [
+          "AURKA"
+        ],
+        "n_targets": 1,
+        "score": 2.079441541679836
+      },
+      {
+        "drug": "HESPERADIN",
+        "targets": [
+          "AURKA"
+        ],
+        "n_targets": 1,
+        "score": 1.9459101490553128
+      }
+    ],
+    "SCLC_N": [
+      {
+        "drug": "CISPLATIN",
+        "targets": [
+          "MYCN",
+          "MYC",
+          "AURKA"
+        ],
+        "n_targets": 3,
+        "score": 2.4849066497880004
+      },
+      {
+        "drug": "ILORASERTIB",
+        "targets": [
+          "IGF1R",
+          "AURKB",
+          "AURKA"
+        ],
+        "n_targets": 3,
+        "score": 2.302585092994046
+      },
+      {
+        "drug": "CENISERTIB",
+        "targets": [
+          "IGF1R",
+          "AURKB",
+          "AURKA"
+        ],
+        "n_targets": 3,
+        "score": 2.302585092994046
+      },
+      {
+        "drug": "ALISERTIB",
+        "targets": [
+          "MYC",
+          "AURKB",
+          "AURKA"
+        ],
+        "n_targets": 3,
+        "score": 2.19722457733622
+      },
+      {
+        "drug": "GW441756X",
+        "targets": [
+          "AURKB",
+          "IGF1R",
+          "AURKA"
+        ],
+        "n_targets": 3,
+        "score": 2.079441541679836
+      },
+      {
+        "drug": "ENTRECTINIB",
+        "targets": [
+          "AURKB",
+          "IGF1R",
+          "AURKA"
+        ],
+        "n_targets": 3,
+        "score": 2.079441541679836
+      },
+      {
+        "drug": "PF-562271",
+        "targets": [
+          "AURKB",
+          "IGF1R",
+          "AURKA"
+        ],
+        "n_targets": 3,
+        "score": 2.079441541679836
+      },
+      {
+        "drug": "PAZOPANIB",
+        "targets": [
+          "AURKB",
+          "IGF1R",
+          "AURKA"
+        ],
+        "n_targets": 3,
+        "score": 2.079441541679836
+      },
+      {
+        "drug": "HESPERADIN",
+        "targets": [
+          "AURKB",
+          "IGF1R",
+          "AURKA"
+        ],
+        "n_targets": 3,
+        "score": 1.9459101490553128
+      },
+      {
+        "drug": "CYC-116",
+        "targets": [
+          "AURKB",
+          "AURKA"
+        ],
+        "n_targets": 2,
+        "score": 2.302585092994046
+      },
+      {
+        "drug": "OLAPARIB",
+        "targets": [
+          "MYCN",
+          "MYC"
+        ],
+        "n_targets": 2,
+        "score": 2.302585092994046
+      },
+      {
+        "drug": "NVP-TAE684",
+        "targets": [
+          "AURKB",
+          "AURKA"
+        ],
+        "n_targets": 2,
+        "score": 2.19722457733622
+      },
+      {
+        "drug": "SORAFENIB",
+        "targets": [
+          "AURKB",
+          "AURKA"
+        ],
+        "n_targets": 2,
+        "score": 2.079441541679836
+      },
+      {
+        "drug": "PD-0166285",
+        "targets": [
+          "AURKB",
+          "IGF1R"
+        ],
+        "n_targets": 2,
+        "score": 2.079441541679836
+      },
+      {
+        "drug": "RG-1530",
+        "targets": [
+          "AURKA"
+        ],
+        "n_targets": 1,
+        "score": 2.302585092994046
+      },
+      {
+        "drug": "DOVITINIB",
+        "targets": [
+          "AURKB"
+        ],
+        "n_targets": 1,
+        "score": 2.19722457733622
+      },
+      {
+        "drug": "TALAZOPARIB",
+        "targets": [
+          "MYCN"
+        ],
+        "n_targets": 1,
+        "score": 2.079441541679836
+      },
+      {
+        "drug": "SP-600125",
+        "targets": [
+          "AURKB"
+        ],
+        "n_targets": 1,
+        "score": 2.079441541679836
+      },
+      {
+        "drug": "IMATINIB",
+        "targets": [
+          "MYC"
+        ],
+        "n_targets": 1,
+        "score": 2.079441541679836
+      },
+      {
+        "drug": "PACLITAXEL",
+        "targets": [
+          "AURKA"
+        ],
+        "n_targets": 1,
+        "score": 2.079441541679836
+      }
+    ],
+    "SCLC_P": [
+      {
+        "drug": "ILORASERTIB",
+        "targets": [
+          "FGFR1",
+          "IGF1R"
+        ],
+        "n_targets": 2,
+        "score": 2.302585092994046
+      },
+      {
+        "drug": "CENISERTIB",
+        "targets": [
+          "FGFR1",
+          "IGF1R"
+        ],
+        "n_targets": 2,
+        "score": 2.302585092994046
+      },
+      {
+        "drug": "GW441756X",
+        "targets": [
+          "FGFR1",
+          "IGF1R"
+        ],
+        "n_targets": 2,
+        "score": 2.079441541679836
+      },
+      {
+        "drug": "ENTRECTINIB",
+        "targets": [
+          "FGFR1",
+          "IGF1R"
+        ],
+        "n_targets": 2,
+        "score": 2.079441541679836
+      },
+      {
+        "drug": "PF-562271",
+        "targets": [
+          "FGFR1",
+          "IGF1R"
+        ],
+        "n_targets": 2,
+        "score": 2.079441541679836
+      },
+      {
+        "drug": "PD-0166285",
+        "targets": [
+          "FGFR1",
+          "IGF1R"
+        ],
+        "n_targets": 2,
+        "score": 2.079441541679836
+      },
+      {
+        "drug": "PAZOPANIB",
+        "targets": [
+          "FGFR1",
+          "IGF1R"
+        ],
+        "n_targets": 2,
+        "score": 2.079441541679836
+      },
+      {
+        "drug": "HESPERADIN",
+        "targets": [
+          "FGFR1",
+          "IGF1R"
+        ],
+        "n_targets": 2,
+        "score": 1.9459101490553128
+      },
+      {
+        "drug": "CISPLATIN",
+        "targets": [
+          "FGFR1"
+        ],
+        "n_targets": 1,
+        "score": 2.4849066497880004
+      },
+      {
+        "drug": "CYC-116",
+        "targets": [
+          "FGFR1"
+        ],
+        "n_targets": 1,
+        "score": 2.302585092994046
+      },
+      {
+        "drug": "RG-1530",
+        "targets": [
+          "FGFR1"
+        ],
+        "n_targets": 1,
+        "score": 2.302585092994046
+      },
+      {
+        "drug": "NVP-TAE684",
+        "targets": [
+          "FGFR1"
+        ],
+        "n_targets": 1,
+        "score": 2.19722457733622
+      },
+      {
+        "drug": "DOVITINIB",
+        "targets": [
+          "FGFR1"
+        ],
+        "n_targets": 1,
+        "score": 2.19722457733622
+      },
+      {
+        "drug": "ALISERTIB",
+        "targets": [
+          "FGFR1"
+        ],
+        "n_targets": 1,
+        "score": 2.19722457733622
+      },
+      {
+        "drug": "SP-600125",
+        "targets": [
+          "FGFR1"
+        ],
+        "n_targets": 1,
+        "score": 2.079441541679836
+      },
+      {
+        "drug": "SORAFENIB",
+        "targets": [
+          "FGFR1"
+        ],
+        "n_targets": 1,
+        "score": 2.079441541679836
+      },
+      {
+        "drug": "PACLITAXEL",
+        "targets": [
+          "FGFR1"
+        ],
+        "n_targets": 1,
+        "score": 2.079441541679836
+      }
+    ]
+  }
+}
